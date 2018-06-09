@@ -1,0 +1,447 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>BDP社区-带你轻松学会BDP,快速入门数据可视化分析 </title>
+
+<meta name="keywords" content="BDP社区,数据可视化社区,数据分析社区,数据交流社区,大数据社区">
+<meta name="description" content="BDP社区是海致公司（BDP企业版、BDP个人版）的官方论坛，是一个全方位学习和交流数据的平台，在这里可以掌握BDP最新动态、学习BDP操作教程和数据干货，了解数据实际案例等，更有各位数据大牛为你答疑解惑，数据资源共享，助你立马上手BDP，快速入门数据分析，从此数据分析效率大大提高！ ">
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<meta name="baidu-site-verification" content="9EYe6NEPfu">
+<!-- <base href="https://bbs.bdp.cn/"> -->
+<link rel="stylesheet" type="text/css" href="css/style_5_common.css">
+<link type="text/css" rel="stylesheet" href="css/common.css">
+
+<link rel="stylesheet" id="css_extstyle" type="text/css" href="css/style.css">
+
+<script src="js/hm.js"></script><script type="text/javascript">var STYLEID = '5', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'i5H', charset = 'utf-8', discuz_uid = '0', cookiepre = '1lgw_2132_', cookiedomain = '', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|威望|,2|金钱|,3|贡献|', defaultstyle = './template/xinrui_iuni/style/t4', REPORTURL = 'aHR0cDovL2Jicy5iZHAuY24vcG9ydGFsLnBocA==', SITEURL = 'https://bbs.bdp.cn/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<script src="js/common.js" type="text/javascript"></script>
+<meta name="application-name" content="BDP社区">
+<meta name="msapplication-tooltip" content="BDP社区">
+<meta name="msapplication-task" content="name=首页;action-uri=https://bbs.bdp.cn/portal.php;icon-uri=https://bbs.bdp.cn/css/images/portal.ico"><meta name="msapplication-task" content="name=论坛;action-uri=https://bbs.bdp.cn/forum.php;icon-uri=https://bbs.bdp.cn/css/images/bbs.ico">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script src="js/portal.js" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8" src="js/auto_combine_4e05c_c58e00e.js"></script>
+
+<!--<link rel="stylesheet" type="text/css" href="template/xinrui_iuni/common/extend_common.css" />-->
+</head>
+
+<body id="nv_portal" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+
+<nav class="navbar clearfix J-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <i class="ico-list navbar-toggle collapsed"></i>   
+            <!-- <button type="button" class="">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <!-- <a href="navbar-logo" style="font-size: 35px; font-weight: bold;padding-right: 20px;">pte.ai</a> -->
+        </div>
+        <div class="navbar-collapse nav-hide" id="J-navbar-collapse">
+            <i class="ico-close navbar-toggle close-toggle"></i>
+            <ul class="navbar-nav nav-button-group navbar-right">
+                <li class="nav-list-item">
+                    <button class="download-btn btn-animation follow-Public-number"><span>关注公众号</span></button>
+                </li>
+                <li class="nav-list-item">
+                    <button class="download-btn btn-animation follow-Small-program"><span>关注小程序</span></button>
+                </li>
+                <li class="nav-list-item J-register-btn">
+                    <a>
+                        <button class="signin-btn btn-animation btn-an-adverse login-btn"><span>注册</span></button>
+                    </a>
+                </li>
+                <li class="nav-list-item J-login-btn">
+                    <a>
+                        <button class="signin-btn btn-animation btn-an-adverse login-btn"><span>登录</span></button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+
+<!--     <div id="toptb" class="siteTopBar custom-siteTopBar" style="display:block">
+        <div class="wp cl" style="position: relative;">
+        <div class="z">
+        <ul><li></li>
+        <li></li>
+        <li></li>
+        </ul>
+        </div>
+        <div class="y useBar custom-useBar"><div class="no_login y">
+        <ul>
+            <li><a class="custom-no-login download-btn btn-animation">关注微信号</a></li>
+            <li><a class="custom-no-login download-btn btn-animation">关注小程序</a></li>
+            <li><a class="custom-no-login download-btn btn-animation">登录</a></li>
+            <li><a class="custom-no-login">立即注册</a></li>
+        </ul>
+        </div>
+        <style>
+        #toptb.siteTopBar .custom-no-login {
+        color: #FFF;
+        font-size: 16px;
+        }
+        </style>
+        <div class="qq_wx_icon y">
+        </div>
+         
+        </div>
+        </div>
+    </div> -->
+
+<style>
+#toptb.custom-siteTopBar {
+height: 0;
+padding: 0;
+}
+.custom-useBar {
+position: absolute;
+right: 235px;
+top: 31px;
+}
+#toptb.custom-siteTopBar #um .uName {
+color: #FFF;
+font-size: 16px;
+}
+</style>
+
+ 
+<div id="qmenu_menu" class="p_pop blk" style="display: none;">
+<div class="ptm pbw hm">
+请 <a href="javascript:;" class="xi2" onclick="lsSubmit()"><strong>登录</strong></a> 后使用快捷导航<br>没有帐号？<a href="member.php?mod=register" class="xi2 xw1">立即注册</a>
+</div>
+<div id="fjump_menu" class="btda"></div></div><style>
+#qmenu.qNv {
+display: none;
+}
+</style>
+<div id="hd">
+<div class="wp cl"><h1 class="logo z"><a href="./" title="BDP社区"><img src="css/images/logo_cb26fff.png" alt="BDP社区" border="0"></a></h1>
+
+<div id="nv" class="z">
+<ul>
+<!--     <li class="a" id="mn_portal"><a href="portal.php" hidefocus="true" title="门户">首页<span>门户</span></a></li>
+    <li id="mn_forum"><a href="forum.php" hidefocus="true" title="BBS">论坛<span>BBS</span></a>
+    </li> -->
+</ul>
+</div>
+
+<div class="hidden">
+<link type="text/css" rel="stylesheet" href="css/auto_combine_27876_2f360d4.css">
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+<script>
+var jQ111 = jQuery.noConflict(true);
+(function($){
+var html = '<div id="SJ_banner" class="clearfix" style="display:none;background:#fff !important;"><div class="mask mask_l"  style="background:#fff !important;"></div><div class="mask mask_r" style="background:#fff !important;"></div><div class="b_wrap"><ul style=""><li><a href="https://w.url.cn/s/AEDqwfl" target="_blank"><img src="css/images/tips.jpg" alt="SUNJU_TROSI_IMG" /></a></li><li><a href="https://w.url.cn/s/AWoyx6H" target="_blank"><img src="css/images/01.png" alt="SUNJU_TROSI_IMG" /></a></li><li><a href="https://w.url.cn/s/A3RVcQe" target="_blank"><img src="css/images/banner_0705_2.png" alt="SUNJU_TROSI_IMG" /></a></li></ul></div></div>';
+$("#hd").after(html);
+$("#SJ_banner").fadeIn(3000);
+var SJ_bannerWidth = document.body.clientWidth > 1260 ? 1200 : 980;
+var SJ_bannerLength = $("#SJ_banner li").length;
+var SJ_bennerCurrent = 1;
+var SJ_timer = null;
+$("#SJ_banner ul").css("left", -SJ_bannerWidth).append($("#SJ_banner li").clone()).prepend($("#SJ_banner li:last-child").clone());
+function SJ_rebind() {
+    $("#SJ_banner .mask_l").click(SJ_bannerRight);
+    $("#SJ_banner .mask_r").click(SJ_bannerLeft)
+}
+function SJ_unbind() {
+    $("#SJ_banner .mask_l").unbind();
+    $("#SJ_banner .mask_r").unbind()
+}
+function SJ_bannerLeft() {
+    if (SJ_bennerCurrent >= SJ_bannerLength + 1) {
+        SJ_bennerCurrent = 1;
+        $("#SJ_banner ul").css("left", -SJ_bennerCurrent * SJ_bannerWidth)
+    }
+    SJ_bennerCurrent++;
+    SJ_bannerMove( - SJ_bennerCurrent * SJ_bannerWidth)
+}
+function SJ_bannerRight() {
+    if (SJ_bennerCurrent <= 1) {
+        SJ_bennerCurrent = SJ_bannerLength + 1;
+        $("#SJ_banner ul").css("left", -SJ_bennerCurrent * SJ_bannerWidth)
+    }
+    SJ_bennerCurrent--;
+    SJ_bannerMove( - SJ_bennerCurrent * SJ_bannerWidth)
+}
+function SJ_bannerMove(b, a) {
+    clearTimeout(SJ_timer);
+    SJ_unbind();
+    $("#SJ_banner ul").animate({
+        left: b
+    },
+    function() {
+        if (a != 0) {
+            $(this).css("left", a)
+        }
+        SJ_rebind();
+        SJ_timer = setTimeout(SJ_bannerLeft, '2000')
+    })
+}
+SJ_rebind();
+SJ_timer = setTimeout(SJ_bannerLeft, '2000');
+function resize(a) {
+    clearTimeout(SJ_timer);
+    if (a > 1260 && SJ_bannerWidth == 980) {
+        $("#SJ_banner ul").stop(true, true);
+        SJ_bannerWidth = 1200;
+        $("#SJ_banner ul").css("left", -SJ_bannerWidth);
+        SJ_bennerCurrent = 1
+    } else {
+        if (a <= 1260 && SJ_bannerWidth == 1200) {
+            $("#SJ_banner ul").stop(true, true);
+            SJ_bannerWidth = 980;
+            $("#SJ_banner ul").css("left", -SJ_bannerWidth);
+            SJ_bennerCurrent = 1
+        }
+    }
+    SJ_timer = setTimeout(SJ_bannerLeft, '2000')
+};
+})(jQ111);
+</script>
+</div>
+<div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="article">文章</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+<a href="javascript:;" class="z qNv" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(0);})">快捷导航</a>
+</div>
+</div>
+<div id="wp" class="wp">
+
+<style id="diy_style" type="text/css"></style>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript"> jQuery.noConflict();</script>
+<script src="js/jquery.SuperSlide.js" type="text/javascript"></script>
+<div class="wp cl">
+<div class="cl" style="margin-bottom:15px;">
+<!--[diy=diy13]--><div id="diy13" class="area"></div><!--[/diy]-->  
+</div>
+<div class="col2 y">
+<div class="hotTag bp">
+<div class="blocktitle title">热门话题</div>
+<div class="tagMod cl">
+    <ul id="topic">
+        <li><a href="https://w.url.cn/s/AbMJ0U1" target="_blank"><span class="box-color border">1</span>成绩出来了 spelling分数爆低 这可能是因为你英美混写了!</a></li>
+        <li><a href="https://w.url.cn/s/ArnNyZy" target="_blank"><span class="box-color border">2</span>进入了这些误区 你的DI分数将很难提高  </a></li>
+        <li><a href="https://w.url.cn/s/AwLDvqV" target="_blank"><span class="box-color border">3</span>阅读速度太慢？别担心，找到这些关键词可以迅速找点 </a></li>
+        <li><a href="https://w.url.cn/s/AxSGS6h" target="_blank"><span class="box-color">4</span>不会分析成绩单？那今天这篇你一定不能错过</a></li>
+        <li><a href="https://w.url.cn/s/AmsklAq" target="_blank"><span class="box-color">5</span>精听和泛听材料的选择</a></li>
+    </ul>
+</div>
+</div>
+<div class="mbm"><!--[diy=diy6]--><div id="diy6" class="area"></div><!--[/diy]--></div>
+<div class="mbm"><!--[diy=diy7]--><div id="diy7" class="area"></div><!--[/diy]--></div>
+</div>
+<div class="col1 z">
+<div class="bp">
+<div class="pSlide"><!--[diy=diy1]--><div id="diy1" class="area"><div id="frameqxfYFT" class="frame move-span cl frame-1"><div id="frameqxfYFT_left" class="column frame-1-c"><div id="frameqxfYFT_left_temp" class="move-span temp"></div><div id="portal_block_17" class="block move-span"><div id="portal_block_17_content" class="dxb_bc"><div class="module cl xld"><dl class="cl">
+    <dd class="m"><a href="https://bbs.bdp.cn/forum.php?mod=viewthread&amp;tid=231&amp;fromuid=1" target="_blank"><img src="css/images/Public_number_1.jpg" width="200" height="150" alt="新手必看：一文教你轻松入门BDP，从此变身数据达人！"></a></dd>
+    <dt><em class="y xg1 xw0"><a href="space-username-.html" target="_blank"></a></em><a href="https://w.url.cn/s/AGwFeeB" title="她的八炸 来源于对PTE的特殊理解" target="_blank">她的八炸 来源于对PTE的特殊理解</a></dt>
+    <dd style="text-indent:2em;">先说下我的pte复习之路，我是在一月份开始正式准备的pte，后来上了押题班，3月份第一次考了7炸，过了两周发现要8炸，又开始接着复习，考了一次发现不行，就报了黑科技Brenda的口语班，第三次考口语过了8但是听力还是差一些，就又报了Marie老师的听力班。</dd>
+</dl><dl class="cl">
+    <dd class="m"><a href="https://bbs.bdp.cn/thread-355-1-2.html" target="_blank"><img src="css/images/Public_number_2.jpg" width="200" height="150" alt="最全的BDP付费VIP会员使用攻略，一定要看哦"></a></dd>
+    <dt><em class="y xg1 xw0"><a href="space-username-.html" target="_blank"></a></em><a href="https://w.url.cn/s/AwlMcPf" title="全职宝妈碎片时间备考 20小时攻下PTE" target="_blank">全职宝妈碎片时间备考 20小时攻下PTE</a></dt>
+    <dd style="text-indent:2em;">
+想分享给各位还奋斗在路上的兄弟姐妹们，仅仅十小时的一对一辅导和真的很零碎的半夜两三点的复习时间是如何备考第三次pte的经历。虽然我要的分数很低，但也想把遇见黑科技的这份幸运传递下去，还请各位大神多指点！</dd>
+</dl><dl class="cl">
+    <dd class="m"><a href="https://bbs.bdp.cn/thread-669-1-1.html" target="_blank"><img src="css/images/Public_number_3.jpg" width="200" height="150" alt="各位久等了，全新炫酷的自定义图表终于上线啦！"></a></dd>
+    <dt><em class="y xg1 xw0"><a href="space-username-.html" target="_blank"></a></em><a href="https://w.url.cn/s/A2WX2yv" title="八炸备考什么最重要？机经，运气，能力还是……" target="_blank">八炸备考什么最重要？机经，运气，能力还是……</a></dt>
+    <dd style="text-indent:2em;">
+各位老铁如果只想看精华的话，那么我这一年的经验就想告诉你：鸡精很重要，运气更重要，最最重要的还是专注度。</dd>
+</dl><dl class="cl">
+    <dd class="m"><a href="https://bbs.bdp.cn/thread-173-1-1.html" target="_blank"><img src="css/images/Public_number_4.jpg" width="200" height="150" alt="【热力地图】陛下们，热力地图已献上，快翻牌哟！"></a></dd>
+    <dt><em class="y xg1 xw0"><a href="space-username-.html" target="_blank"></a></em><a href="https://w.url.cn/s/ALwJG2F" title="只是改了一些小毛病 PTE各项分数立涨十几分" target="_blank">只是改了一些小毛病 PTE各项分数立涨十几分</a></dt>
+    <dd style="text-indent:2em;">说说报班这个事吧，我在这上面花了不少冤枉钱，但是效果真的甚微，最后我选择黑科技一对一也是我觉得黑科技APP实在太棒了，能这么用心帮助广大考生的机构，一定也是非常良心的！现在看来，我当时的决定是正确的。</dd>
+</dl><dl class="cl">
+    <dd class="m"><a href="https://bbs.bdp.cn/thread-155-1-1.html" target="_blank"><img src="css/images/Public_number_5.jpg" width="200" height="150" alt="【多表关联】一看就会的多表关联，狂甩vlookup好几条街！"></a></dd>
+    <dt><em class="y xg1 xw0"><a href="space-username-.html" target="_blank"></a></em><a href="https://w.url.cn/s/A16WtHv" title="高考英语31分到PTE7炸 这一路走来真的不容易" target="_blank">高考英语31分到PTE7炸 这一路走来真的不容易</a></dt>
+    <dd style="text-indent:2em;">虽然长期目标是8炸，不过阶段性7炸非常开心，高考英语31分的英语学渣一路走来不容易，写经验前先感谢大班长，无私奉献的鸡精，还有上1v1课后老师给的复习方向和经验都很有用，避免自己在错误的方向上浪费时间。</dd>
+</dl><dl class="cl">
+    <dd class="m"><a href="https://bbs.bdp.cn/thread-165-1-1.html" target="_blank"><img src="css/images/Public_number_6.jpg" width="200" height="150" alt="【多层钻取】多层数据巧钻取，让数据无处可躲"></a></dd>
+    <dt><em class="y xg1 xw0"><a href="space-username-.html" target="_blank"></a></em><a href="https://w.url.cn/s/ABNsZZl" title="9次考试终于5项90分，她的操作才叫666   " target="_blank">9次考试终于5项90分，她的操作才叫666   </a></dt>
+    <dd style="text-indent:2em;">在考第三次的时候高分七炸（与头两次的分数比有了质的飞跃），考前用了小两周的时间只准备了口语，提高流力度和发音，当时才知道口语要一直压低声音，保持平稳才能识别的好，而且对于口语来说，流利度是最最最重要的！
+</dd>
+</dl><dl class="cl">
+    <dd class="m"><a href="https://bbs.bdp.cn/thread-141-1-1.html" target="_blank"><img src="css/images/Public_number_7.jpg" width="200" height="150" alt="【桑基图】手把手教你2步制作桑基图，简单又实用！"></a></dd>
+    <dt><em class="y xg1 xw0"><a href="space-username-.html" target="_blank"></a></em><a href="https://w.url.cn/s/ALbMXG4" title="期末与PTE齐飞 高效复习也能炸" target="_blank">期末与PTE齐飞 高效复习也能炸</a></dt>
+    <dd style="text-indent:2em;">在出国读研之前，我的雅思成绩在7/7/7/6的水平上，写作上不来所以才转战了PTE。讲真，对于一个听力一般般的人来说，PTE真的没有想象中的那么简单，希望跟我成绩差不多的小伙伴们不要太轻敌，还是要好好准备的哦！
+</dd>
+</dl><dl class="cl">
+    <dd class="m"><a href="https://bbs.bdp.cn/thread-157-1-1.html" target="_blank"><img src="css/images/Public_number_8.jpg" width="200" height="150" alt="【双轴图】折线+柱状=双轴图？竟然如此简单、直观！"></a></dd>
+    <dt><em class="y xg1 xw0"><a href="space-username-.html" target="_blank"></a></em><a href="https://w.url.cn/s/AdqcZTC" title="口语从48到双90，她到底经历了什么？    " target="_blank">口语从48到双90，她到底经历了什么？    </a></dt>
+    <dd style="text-indent:2em;">知道pte的存在也是今年三月份的事情了，听说pte出分快并且比雅思更容易过的情况下，在四月份决定转战pte。考前两三天发现了pte黑科技，稍微看了些就去考了结果第一次口语非常低，在这个情况下就报了pte黑科技的口语课。</dd>
+</dl><dl class="cl">
+    <dd class="m"><a href="https://bbs.bdp.cn/thread-151-1-1.html" target="_blank"><img src="css/images/Public_number_9.jpg" width="200" height="150" alt="【气泡图】轻轻拖拽，散点图秒变成漂亮的四象限气泡图！"></a></dd>
+    <dt><em class="y xg1 xw0"><a href="space-username-.html" target="_blank"></a></em><a href="https://w.url.cn/s/A69PrQq" title="雅思虐我千百遍 转考PTE 脱坑就用12天   " target="_blank">雅思虐我千百遍 转考PTE 脱坑就用12天   </a></dt>
+    <dd style="text-indent:2em;">后来在雅思还是pte上纠结了半天，觉得pte出分快，上午考完晚上出分，而雅思要干耗两周，而且我们学校要求必须在最后五周的语言班考试之前交成绩才算数，否则只能按你语言班成绩来算你是否能否入学。</dd>
+</dl></div></div></div></div></div></div><!--[/diy]--></div>
+<div class="txtRoll"><!--[diy=diy14]--><div id="diy14" class="area"></div><!--[/diy]--></div>
+</div>
+</div>
+</div>
+</div>
+<style type="text/css">
+    .cl .m img{
+        width: 243px !important;
+    }
+</style>
+
+
+<!-- 扫描二维码 -->
+<div class="erweima-download-modal-wrapper erweima-J-down-load-app" style="display: none;">
+    <div class="erweima-download-modal-bg"></div>
+    <div class="erweima-download-modal">
+        <div class="download-modal-header">
+            <div class="erweima-modal-close"></div>
+        </div>
+        <div class="download-modal-body">
+            <div class="download-title">扫描二维码 下载APP</div>
+            <div class="download-sub-title"></div>
+            <img class="download-code" src="css/images/download_app_code.png">
+        </div>
+    </div>
+</div>
+
+   <!-- //登陆弹出框 -->
+<div class="login-download-modal-wrapper login-J-down-load-app" id="login_box">
+    <div class="login-download-modal-bg"></div>
+    <div class="login-download-modal login-grid">
+      <img class="grid-top-pic" src="css/images/loginBoxTop.png" style="max-width: 100%">
+      <div class="top-word">
+        <p class="brand-intro-font">PTE黑科技在线学习平台</p>
+        <p class="brand-edition-font">Ver0.5.0版本</p>
+      </div>
+      <div class="login-content">
+        <img class="erweima" src="css/images/load.gif" />
+        <p class="login-font-style">请使用微信扫描二维码登录</p>
+        <p class="login-font-style">“PTE黑科技”</p>
+        <div class="new-modular">
+          <p class="login-font-style">【功能】新增了模考功能，同学们可以在其中练习分类模考啦！</p>
+          <p class="login-font-style">【功能】新增了我的模考功能，同学们可以在里面查看之前的模考情况啦！</p>
+          <p class="login-font-style">【功能】新增了数据中心，同学们可以查看我的个人数据啦！</p>
+          <p class="login-font-style">【修复】修复了已知的再练习里面的bug！</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="container">
+        <!-- <div class="row">
+            <img src="/static/css/images/new_home/footer_logo.png" class="logo footer-logo">
+        </div> -->
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="footer-nav-container">
+                    <li><a href="home.html" class="container-intro" target="_blank">首页</a><i class="disc"></i></li>
+                    <li><a href="case-operate.html" class="container-intro" target="_blank">课程&会员</a><i class="disc"></i></li>
+                    <li><a href="member.html" class="container-intro" target="_blank">用户案例</a><i class="disc"></i></li>
+                    <li id="product_page"><a href="instructional_video.html" target="_blank" class="container-intro">教学视频</a><i class="disc"></i></li>
+                    <li><a href="portal.html" class="container-intro">用户社区</a><i class="disc"></i></li>
+                    <li id="showPCall">联系我们</li>
+                </ul>
+                <ul class="contact-container footer-mesg">
+                    <li><i class="ico ico-address"></i>西安市雁塔区雁翔路博源科技广场C座</li>
+                    <li><i class="ico ico-zhihu"></i>黑科技PTE</li>
+                    <li><i class="ico ico-phone"></i>400-101-9155</li>
+                    <li><a id="email_contact" href="mailto:xiaop@bdp.cn"><i class="ico ico-email"></i>info@ikk.ai</a></li>
+                    <!-- <li><i class="ico ico-qq"></i>2543360559</li> -->
+                </ul>
+                <p class="copyright">Copyright 2017 - 2018  ikk. All Rights Reserved.<span>深圳市科科智能科有限公司 版权所有</span></p>
+            </div>
+            
+            <div class="col-md-2 footer-code">
+                <p class="code-name">PTE微信公众号</p>
+                <img src="css/images/weichat_8bae732.png" width="100px">
+                <p class="code-info">更多PTE热门资讯</p>
+            </div>
+            <div class="col-md-2 footer-code">
+                <p class="code-name">PTE小程序</p>
+                <img src="css/images/offical_weichat_1a0871c.png" width="100px">
+                <p class="code-info">扫TA随时开始学习</p>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        .container-intro{
+            color: #fff !important;
+        }
+    </style>
+</footer>
+
+
+
+
+
+
+
+<!-- 
+<div id="ft" class="xr_ft">
+        <div class="wp">
+            <div id="c">
+                <div id="flogo"><img src="template/xinrui_iuni/images/logo-bbs.svg"></div>
+                                <p class="xs0">
+                    Copyright © 2017 Haizhi ltd.
+                    GMT+8, 2018-6-7 19:22                    <span id="debuginfo">
+                    , Processed in 0.025501 second(s), 10 queries
+                        .
+                                        </span>
+                </p>
+            </div>
+            <ul id="qc">
+                <li><img src="css/images/qc-1.png"><i>官方微信</i></li>
+                <li><img src="css/images/personal_offical_weichat.png"><i>微信公众号</i></li>
+            </ul>
+        </div>
+</div>
+
+
+<div class="download-modal-wrapper J-down-load-app" style="display: none;">
+    <div class="download-modal-bg"></div>
+    <div class="download-modal">
+        <div class="download-modal-header">
+            <div class="modal-close"></div>
+        </div>
+        <div class="download-modal-body">
+            <div class="download-title">扫描二维码 下载APP</div>
+            <div class="download-sub-title"></div>
+            <img class="download-code" src="css/images/download_app_code.png">
+        </div>
+    </div>
+</div>
+
+
+ -->
+
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "js/hm.js";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+<script src="home.php?mod=misc&amp;ac=sendmail&amp;rand=1528370534" type="text/javascript"></script>
+<div id="scrolltop" style="left: auto; right: 0px; visibility: visible;">
+<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa"><b>返回顶部</b></a></span>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
+            <div id="discuz_tips" style="display:none;"></div>
+            <script type="text/javascript">
+                var tipsinfo = '|X3.2|0.6||0||0|7|1528370534||2';
+            </script>
+            <script src="http://discuz.gtimg.cn/cloud/scripts/discuz_tips.js?v=1" type="text/javascript" charset="UTF-8"></script>
+
+
+</body></html>

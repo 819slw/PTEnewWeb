@@ -1,0 +1,809 @@
+<html ng-app=""><head>
+    <meta charset="utf-8">
+    <meta name="application-name" content="黑科技PTE">
+    <meta name="keywords" content="黑科技PTE">
+    <meta name="description" content="黑科技PTE">
+    <title>黑科技PTE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="baidu-site-verification" content="9EYe6NEPfu">
+    <!--[if lt IE 10]>
+    <script>
+        (function(){
+            var tags = "abbr,article,aside,audio,canvas,datalist,details,dialog,section,"
+                    + "eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,"
+                    + "output,progress,time,video";
+            tags = tags.split(",");
+            var i = tags.length;
+            while(i--){
+                document.createElement(tags[i]);
+            }
+        })();
+    </script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/home/css/opacity-filter.css">
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="css/auto_combine_27876_2f360d4.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <!-- 存储服务 -->
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.2/dist/av-min.js"></script>
+    <!-- 实时消息服务 -->
+    <script src="//cdn.jsdelivr.net/npm/leancloud-realtime@4.0.1/dist/realtime.browser.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.2/dist/av-live-query-min.js"></script>    
+    <script type="text/javascript" src="js/public.js"></script>
+    <script src="https://cdn.bootcss.com/slidesjs/3.0.3/jquery.slides.min.js"></script>
+
+    <!-- <script src="js/bdpa-sdk-js.js"></script> -->
+</head>
+
+<body class="bdp-personal" style="font-family: '微软雅黑' !important;"><!--  onload="init()" -->
+
+<nav class="navbar clearfix J-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <i class="ico-list navbar-toggle collapsed"></i>   
+            <!-- <button type="button" class="">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <!-- <a href="navbar-logo" style="font-size: 35px; font-weight: bold;padding-right: 20px;">pte.ai</a> -->
+            <a class="navbar-logo" href="/home.html">
+            </a>
+        </div>
+        <div class="navbar-collapse nav-hide" id="J-navbar-collapse">
+            <i class="ico-close navbar-toggle close-toggle"></i>
+            <!-- <button type="button" class="">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <ul class="navbar-nav nav-list navbar-left">
+                <li class="nav-list-item" id="home_page"><a href="home.html">首页</a></li>
+                <li class="nav-list-item" id="case_page"><a href=" case-operate.html">课程&会员</a></li>
+                <li class="nav-list-item" id="member_info"><a href="member.html">用户案例</a></li>
+                <li class="nav-list-item" id="instructional_video"><a href="instructional_video.html">教学视频</a></li>
+                <li class="nav-list-item" id="about_page"><a href="portal.html" target="_blank">用户社区</a></li>
+            </ul>
+            <ul class="navbar-nav nav-button-group navbar-right">
+                <li class="nav-list-item">
+                    <button class="download-btn btn-animation follow-Public-number"><span>关注公众号</span></button>
+                </li>
+                <li class="nav-list-item">
+                    <button class="download-btn btn-animation follow-Small-program"><span>关注小程序</span></button>
+                </li>
+                <li class="nav-list-item J-register-btn">
+                    <a>
+                        <button class="signin-btn btn-animation btn-an-adverse login-btn"><span>注册</span></button>
+                    </a>
+                </li>
+                <li class="nav-list-item J-login-btn">
+                    <a>
+                        <button class="signin-btn btn-animation btn-an-adverse  login-btn"><span>登录</span></button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- 扫描二维码 -->
+<div class="erweima-download-modal-wrapper erweima-J-down-load-app" style="display: none;">
+    <div class="erweima-download-modal-bg"></div>
+    <div class="erweima-download-modal">
+        <div class="download-modal-header">
+            <div class="erweima-modal-close"></div>
+        </div>
+        <div class="download-modal-body">
+            <div class="download-title">扫描二维码 下载APP</div>
+            <div class="download-sub-title"></div>
+            <img class="download-code" src="css/images/download_app_code.png">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+   <!-- //登陆弹出框 -->
+<div class="login-download-modal-wrapper login-J-down-load-app" id="login_box">
+    <div class="login-download-modal-bg"></div>
+    <div class="login-download-modal login-grid">
+      <img class="grid-top-pic" src="css/images/loginBoxTop.png" style="max-width: 100%">
+      <div class="top-word">
+        <p class="brand-intro-font">PTE黑科技在线学习平台</p>
+        <p class="brand-edition-font">Ver0.5.0版本</p>
+      </div>
+      <div class="login-content">
+        <img class="erweima" src="css/images/load.gif" />
+        <p class="login-font-style">请使用微信扫描二维码登录</p>
+        <p class="login-font-style">“PTE黑科技”</p>
+        <div class="new-modular">
+          <p class="login-font-style">【功能】新增了模考功能，同学们可以在其中练习分类模考啦！</p>
+          <p class="login-font-style">【功能】新增了我的模考功能，同学们可以在里面查看之前的模考情况啦！</p>
+          <p class="login-font-style">【功能】新增了数据中心，同学们可以查看我的个人数据啦！</p>
+          <p class="login-font-style">【修复】修复了已知的再练习里面的bug！</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="personal-help">
+    <div class="btn-help"><i class="bdp-icon ico-help-white"></i></div>
+    <div class="tooltip-help">
+        帮助与反馈
+    </div>
+    <div class="pannel-question" style="display: none;">
+        <div class="pannel-header">
+            <ul class="header-list clearfix">
+                 <li class="header-item active">
+                     常见问题
+                 </li>
+             </ul>
+        </div>
+        <div class="pannel-body">
+            <ul class="question-list">
+                <li class="question-item" data-log="register">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        如何快速注册？
+                    </div>
+                    <div class="answer">
+                        在线通过手机号或邮箱注册即可，无需安装下载，注册后就能永久免费使用。
+                    </div>
+                </li>
+                <li class="question-item" data-log="getStart">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        如何快速上手BDP个人版？
+                    </div>
+                    <div class="answer">
+                        在BDP，三步即可搞定数据分析：对接数据-拖拽分析-可视化呈现，就两个字：拖拽。若想实现入门到精通，用户社区、微信公众号和用户群能帮你。
+                    </div>
+                </li>
+                <li class="question-item" data-log="levelDifference">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        不同会员级别有什么区别？
+                    </div>
+                    <div class="answer">
+                        <p>1）免费：100G容量、对接3个API。</p>
+                        <p>2）银钻：1G容量、对接8个API，并享受本地同步宝、数据库直连、公众号对接、地址转经纬度等高级功能。</p>
+                        <p>3）金钻：10G容量、对接50个API，包括所有银钻功能，并享受同步客户端、数据库实时更新、私密分享等更多高级功能。</p>
+                    </div>
+                </li>
+                <li class="question-item" data-log="enterpriseDifference">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        个人版和企业版有什么区别？
+                    </div>
+                    <div class="answer">
+                        企业版数据容量限制大于个人版，且企业版提供完整的账号权限管理体系、完善的数据分配体系、更加强大的大数据计算性能、行业数据解决方案咨询......<a class="bdp-a" href="https://bbs.bdp.cn/forum.php?mod=viewthread&amp;tid=71&amp;highlight=%E5%8C%BA%E5%88%AB" target="_blank">了解更多</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="question-item" data-log="goBbs">
+                    <a href="https://bbs.bdp.cn/portal.php" target="_blank" class="quertion">
+                        <i class="bdp-icon ico-help-other"></i>
+                        <span class="vm">还有其他问题？欢迎去<span class="cr-link font-w-b">用户社区</span>学习</span>
+                        <i class="bdp-icon ico-turn-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+
+<section class="home-banner-wrap J-scorll-top" id="slider">
+    <!-- <div class="slidesjs-container"> -->
+        <!-- <div class="slidesjs-control"> -->
+            <div class="home-banner banner-1 nivo-imageLink slidesjs-slide">
+                <div class="container">
+                    <div class="banner-content">
+                        <h3 class="banner-title" style="padding-top: 65px">
+                            数据驱动下的生态化研学解决方案
+                        </h3>
+                        <p class="banner-slogan">
+                            人人都是学习达人
+                        </p>
+                        <div class="free-use-btn btn-white login-btn">
+                            免费使用
+                        </div>
+                    </div>
+                    <div class="banner-img">
+                        <img src="css/images/banner1_56d9c8b.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="home-banner banner-5 nivo-imageLink slidesjs-slide">
+                <div class="container">
+                    <div class="banner-content">
+                        <h3 class="banner-title">
+                            有了黑科技PTE，学习有头绪
+                        </h3>
+                        <p class="banner-slogan">
+                            还在为盲目学习而苦恼么，做了很多无用功没有收获么？在黑科技PTE,满满的干货，让你花费最少的时间学有价值的内容
+                        </p>
+                        <div class="free-use-btn btn-white login-btn">
+                            免费使用
+                        </div>
+                    </div>
+                    <div class="banner-img">
+                        <img class="pc" src="css/images/banner5_23d49de.png" alt="">
+                        <img class="mobile" src="css/images/banner5-mobile_70bc7aa.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="home-banner banner-4 nivo-imageLink slidesjs-slide">
+                <div class="container">
+                    <div class="banner-content">
+                        <h3 class="banner-title">
+                            有了黑科技PTE，学习不求人
+                        </h3>
+                        <p class="banner-slogan">
+                            还在到处找资源，逛贴吧，要机经么？在黑科技PTE，我们已经把这些都给你准备好了，让你专注到学习本身
+                        </p>
+                        <div class="free-use-btn btn-white login-btn">
+                            免费使用
+                        </div>
+                    </div>
+                    <div class="banner-img">
+                        <img class="pc" src="css/images/banner4_a70a055.png" alt="">
+                        <img class="mobile" src="css/images/banner4-mobile_da38e1a.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="home-banner banner-3 nivo-imageLink slidesjs-slide">
+                <div class="container">
+                    <div class="banner-content">
+                        <h3 class="banner-title">
+                            有了黑科技PTE，学习很自觉
+                        </h3>
+                        <p class="banner-slogan">
+                            还在为自控能力差而抱怨么？在黑科技PTE,完整的督学系统让你爱上学习，善于学习，不给学习找借口~
+                        </p>
+                        <div class="free-use-btn btn-white login-btn">
+                            免费使用
+                        </div>
+                    </div>
+                    <div class="banner-img">
+                        <img src="css/images/banner3_fe48ff4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="home-banner banner-2 nivo-imageLink slidesjs-slide">
+                <div class="container">
+                    <div class="banner-content">
+                        <h3 class="banner-title">
+                            有了黑科技PTE，学渣秒变学霸
+                        </h3>
+                        <p class="banner-slogan">
+                            还在为定不出计划临时抱佛脚么？系统一键分析订制你的学习计划，秒变执行小能手
+                        </p>
+                        <div class="free-use-btn btn-white login-btn">
+                            免费使用
+                        </div>
+                    </div>
+                    <div class="banner-img">
+                        <img class="pc" src="css/images/banner2_c078255.png" alt="">
+                        <img class="mobile" src="css/images/banner2-mobile_863e336.png" alt="">
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    <!-- </div> -->
+<!--     <a class="slidesjs-play slidesjs-navigation" href="#" title="Play">Play</a><a class="slidesjs-stop slidesjs-navigation" href="#" title="Stop">Stop</a><ul class="slidesjs-pagination"><li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="0" class=""></a></li><li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="1" class="active"></a></li><li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="2" class=""></a></li><li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="3" class=""></a></li><li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="4" class=""></a></li></ul> -->
+</section>
+
+<section class="feature-wrap">
+    <div class="container feature-wrap">
+        <section class="feature">
+            <h3 class="feature-title">
+                在黑科技PTE,你将收获极致的研学备考体验
+            </h3>
+            <ul class="feature-list clearfix">
+                <li class="feature-item-wrap">
+                    <div class="feature-item">
+                        <div class="symbol"><i class="ico-feature ico-feature-1"></i></div>
+                        <div class="summary">
+                            永久免费 简单易用
+                        </div>
+                        <p class="detail">
+                            无需下载，快速注册账号即可使用。简单清爽的操作流程，让PTE考生也能轻松使用。
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item-wrap">
+                    <div class="feature-item">
+                        <div class="symbol"><i class="ico-feature ico-feature-2"></i></div>
+                        <div class="summary">
+                            练习多元化辅助
+                        </div>
+                        <p class="detail">
+                            练习场景的丰富，用户在练习的同时，可以参与讨论，查看优秀练习，收藏练习题目，让练习不再乏味
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item-wrap">
+                    <div class="feature-item">
+                        <div class="symbol"><i class="ico-feature ico-feature-3"></i></div>
+                        <div class="summary">
+                            模考沉浸式场景
+                        </div>
+                        <p class="detail">
+                            用户可以沉浸模考之中，考试将完全按照官方内容指定，降低考生在实际考试中的不适应感，尽快融入考试
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item-wrap">
+                    <div class="feature-item">
+                        <div class="symbol"><i class="ico-feature ico-feature-4"></i></div>
+                        <div class="summary">
+                            灵活多维的数据统计预测
+                        </div>
+                        <p class="detail">
+                            针对考生在练习或考试时产生的应用数据，系统将结合大数据神经网络对考生进行多维度下探，让考生从各个切面直接了然的看出变化和问题，同时系统将给出解决方案和计划，实现互联网督学
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item-wrap">
+                    <div class="feature-item">
+                        <div class="symbol"><i class="ico-feature ico-feature-5"></i></div>
+                        <div class="summary">
+                            题库数据实时更新
+                        </div>
+                        <p class="detail">
+                            让考生数据和题库数据随时更新，让考生练最新的题，最有效率的题，学习效率成倍提升
+                        </p>
+                    </div>
+                </li>
+                <li class="feature-item-wrap">
+                    <div class="feature-item">
+                        <div class="symbol"><i class="ico-feature ico-feature-6"></i></div>
+                        <div class="summary">
+                            多特性环绕与系统支持
+                        </div>
+                        <p class="detail">
+                            考生可以在完成主要学习目标后，获得勋章或其它奖励，同时系统将举办丰富多样的学力竞赛，促进考生交流，构建我们的PTE生态圈
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</section>
+
+<section class="introduce">
+    <div class="introduce-item clearfix">
+        <div class="container">
+            <div class="info-wrap">
+                <div class="info-title">
+                    初识PTE？东西在这里<br>٩(*Ӧ)و
+                </div>
+                <ul class="info-list">
+                    <li class="info-list-item">
+                        考试介绍实时更新，确保考试资讯第一时间传达
+                    </li>
+                    <li class="info-list-item">
+                        题型细节权威发布，让考生对题型了解充分
+                    </li>
+                </ul>
+                <div class="free-use-btn btn-blue login-btn">
+                    免费使用
+                </div>
+                <!-- <div class="free-use-btn btn-blue J-animate-toggle">
+                    再次播放动画
+                </div> -->
+            </div>
+        </div>
+        <div class="img-wrap J-scorll-animate">
+            <div class="introduce1_1"></div>
+            <div class="introduce1_2"></div>
+            <div class="introduce1_3"></div>
+        </div>
+    </div>
+    <div class="introduce-item clearfix">
+        <div class="container">
+            <div class="info-wrap">
+                <div class="info-title">
+                    练习很压抑？我们陪着你<br>٩( ´︶` )( ´︶` )۶
+                </div>
+                <ul class="info-list">
+                    <li class="info-list-item">
+                        音频示范、答案解析辅助练习
+                    </li>
+                    <li class="info-list-item">
+                        试题收藏、生词速记不放过每一个问题
+                    </li>
+                    <li class="info-list-item">
+                        优秀练习、参与讨论让考生了解的不仅仅是试题
+                    </li>
+                </ul>
+                <div class="free-use-btn btn-blue login-btn">
+                    免费使用
+                </div>
+                <!-- <div class="free-use-btn btn-blue J-animate-toggle">
+                    再次播放动画
+                </div> -->
+            </div>
+        </div>
+        <div class="img-wrap J-scorll-animate">
+            <div class="introduce2_1"></div>
+            <div class="introduce2_2"></div>
+            <div class="introduce2_3"></div>
+        </div>
+    </div>
+    <div class="introduce-item clearfix">
+        <div class="container">
+            <div class="info-wrap">
+                <div class="info-title">
+                    考试不熟悉？模考帮助你<br>φ(๑˃∀˂๑)♪ 
+                </div>
+                <ul class="info-list">
+                    <li class="info-list-item">
+                        完全按照考试进行，沉浸度大幅提高
+                    </li>
+                    <li class="info-list-item">
+                        考试结果自动记错题，提高内容针对性
+                    </li>
+                </ul>
+                <div class="free-use-btn btn-blue login-btn">
+                    免费使用
+                </div>
+                <!-- <div class="free-use-btn btn-blue J-animate-toggle">
+                    再次播放动画
+                </div> -->
+            </div>
+        </div>
+        <div class="img-wrap J-scorll-animate">
+            <div class="introduce3_1"></div>
+            <div class="introduce3_2"></div>
+            <div class="introduce3_3"></div>
+        </div>
+    </div>
+    <div class="introduce-item clearfix">
+        <div class="container">
+            <div class="info-wrap">
+                <div class="info-title">
+                    学习没头绪？数据告诉你<br>(っ•̀ω•́)っ✎⁾⁾ 
+                </div>
+                <ul class="info-list">
+                    <li class="info-list-item">
+                        全面多维的数据统计，让考生快速抓住短板
+                    </li>
+                    <li class="info-list-item">
+                        数据预测提供客观评价，让考生有的放矢
+                    </li>
+                </ul>
+                <div class="free-use-btn btn-blue login-btn">
+                    免费使用
+                </div>
+                <!-- <div class="free-use-btn btn-blue J-animate-toggle">
+                    再次播放动画
+                </div> -->
+            </div>
+        </div>
+        <div class="img-wrap J-scorll-animate">
+            <div class="introduce4_1"></div>
+            <div class="introduce4_2"></div>
+            <div class="introduce4_3"></div>
+            <div class="introduce4_4"></div>
+            <div class="introduce4_5"></div>
+            <div class="introduce4_6"></div>
+        </div>
+    </div>
+    <div class="introduce-item clearfix">
+        <div class="container">
+            <div class="info-wrap">
+                <div class="info-title">
+                    学习不自觉？我们监督你<br>(。＿ 。） ✎＿
+                </div>
+                <ul class="info-list">
+                    <li class="info-list-item">
+                        练习计划在线通知，不再“浑浑噩噩”
+                    </li>
+                    <li class="info-list-item">
+                        成长系统提供多元成就，让用户不断实现“小目标”
+                    </li>
+                </ul>
+                <div class="free-use-btn btn-blue login-btn">
+                    免费使用
+                </div>
+                <!-- <div class="free-use-btn btn-blue J-animate-toggle">
+                    再次播放动画
+                </div> -->
+            </div>
+        </div>
+        <div class="img-wrap J-scorll-animate">
+            <div class="introduce3_1"></div>
+            <div class="introduce3_2"></div>
+            <div class="introduce3_3"></div>
+        </div>
+    </div>
+    <div class="introduce-item clearfix">
+        <div class="container">
+            <div class="info-wrap">
+                <div class="info-title">
+                    成绩不满意？老师辅导你<br>( ´･ω･)ﾉ(._.`)
+                </div>
+                <ul class="info-list">
+                    <li class="info-list-item">
+                        在线互动网课，让考生"身临其境"
+                    </li>
+                    <li class="info-list-item">
+                        线下课程报名，更多资源助考PTE
+                    </li>
+                </ul>
+                <div class="free-use-btn btn-blue login-btn">
+                    免费使用
+                </div>
+                <!-- <div class="free-use-btn btn-blue J-animate-toggle">
+                    再次播放动画
+                </div> -->
+            </div>
+        </div>
+        <div class="img-wrap J-scorll-animate">
+            <div class="introduce5_1"></div>
+            <div class="introduce5_2"></div>
+            <div class="introduce5_3"></div>
+        </div>
+    </div>
+</section>
+
+<section class="propaganda">
+    <div class="container">
+        <div class="propaganda-content">
+            <h3 class="propaganda-title">
+                关注PTE，更关注学习的你
+            </h3>
+            <p class="propaganda-slogan">
+                考生的成长是我们的唯一目标，在学习PTE的所有场景之中，我们都会提供不同的帮助，助力考生提高学习效率，授人以鱼不如授人以渔！
+            </p>
+            <div class="free-use-btn btn-white login-btn">
+                免费使用
+            </div>
+        </div>
+    </div>
+    <div class="propaganda-img">
+    </div>
+</section>
+
+
+<section class="security">
+    <h3 class="security-title">
+        让科技真正服务于学习
+    </h3>
+    <ul class="security-list clearfix">
+        <li class="security-item-wrap">
+            <div class="security-item">
+                <div class="symbol"><i class="ico-security ico-security-1"></i></div>
+                <div class="summary">
+                    智能纠音
+                </div>
+                <p class="detail">
+                    系统自动检查考生发音问题，可视化的波形图让用户对自身的语言能力清楚认知
+                </p>
+            </div>
+            </li><li class="security-item-wrap">
+                <div class="security-item">
+                    <div class="symbol"><i class="ico-security ico-security-2"></i></div>
+                    <div class="summary">
+                        统计分析
+                    </div>
+                    <p class="detail">
+                        系统统计用户的应用数据，并对数据结果和全体数据结果进行对比，实时更新用户能力水平
+                    </p>
+                </div>
+            </li>
+            <li class="security-item-wrap">
+                <div class="security-item">
+                    <div class="symbol"><i class="ico-security ico-security-3"></i></div>
+                    <div class="summary">
+                        课程规划
+                    </div>
+                    <p class="detail">
+                        系统可以给出用户需要报考的的课程和需要学习的任内容，将课程与能力相互结合
+                    </p>
+                </div>
+            </li>
+            <li class="security-item-wrap">
+                <div class="security-item">
+                    <div class="symbol"><i class="ico-security ico-security-4"></i></div>
+                    <div class="summary">
+                        预测预警
+                    </div>
+                    <p class="detail">
+                        我们更看重考生的成长，当考生的数据发生下滑的时候，系统会及时给出预警和站内信通知，让考生保持清醒
+                    </p>
+                </div>
+            </li>
+        
+    </ul>
+</section>
+
+
+<section class="client">
+    <h3 class="client-title">
+        20万考生的首选工具，前所未有的效率提升
+    </h3>
+    <p class="client-intro">
+        我们的用户遍布澳洲和国内，<strong>北京</strong>、<strong>上海</strong>、<strong>广州</strong>、<strong>西安</strong>、<strong>悉尼</strong>、<strong>墨尔本</strong>、<strong>堪培拉</strong>都有我们的身影，机经团的小伙伴们等待你的加入，一起来体验前所未有的效率提升。
+    </p>
+    <div class="free-use-btn btn-blue login-btn">
+        免费使用
+    </div>
+    <div class="job-wrap">
+        <div class="job"></div>
+    </div>
+<!--     <ul class="enterprise-wrap clearfix">
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-wanda"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-alibaba"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-biguitu"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-mangguotvhuiyuan"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-chinaunicom"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-yiqi"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-tencent"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-didi"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-nielsen"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-shunfeng"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+                <i class="ico-client ico-wangyi"></i>
+            </div>
+        </li>
+        <li class="enterprise-item-wrap">
+            <div class="enterprise-item">
+            <i class="ico-client ico-pingan_2"></i>
+            </div>
+        </li>
+    </ul> -->
+</section>
+
+<footer>
+    <div class="container">
+        <!-- <div class="row">
+            <img src="/static/css/images/new_home/footer_logo.png" class="logo footer-logo">
+        </div> -->
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="footer-nav-container">
+                    <li><a href="home.html" class="container-intro">首页</a><i class="disc"></i></li>
+                    <li><a href="case-operate.html" class="container-intro">课程&会员</a><i class="disc"></i></li>
+                    <li><a href="member.html" class="container-intro">用户案例</a><i class="disc"></i></li>
+                    <li id="product_page"><a href="instructional_video.html" class="container-intro">教学视频</a><i class="disc"></i></li>
+                    <li><a href="portal.html" target="_blank" class="container-intro">用户社区</a><i class="disc"></i></li>
+                    <li id="showPCall">联系我们</li>
+                </ul>
+                <ul class="contact-container footer-mesg">
+                    <li><i class="ico ico-address"></i>西安市雁塔区雁翔路博源科技广场C座</li>
+                    <li><i class="ico ico-zhihu"></i>黑科技PTE</li>
+                    <li><i class="ico ico-phone"></i>400-101-9155</li>
+                    <li><a id="email_contact" href="mailto:xiaop@bdp.cn"><i class="ico ico-email"></i>info@ikk.ai</a></li>
+                    <!-- <li><i class="ico ico-qq"></i>2543360559</li> -->
+                </ul>
+                <p class="copyright">Copyright 2017 - 2018  ikk. All Rights Reserved.<span>深圳市科科智能科有限公司 版权所有</span></p>
+            </div>
+            
+            <div class="col-md-2 footer-code">
+                <p class="code-name">PTE微信公众号</p>
+                <img src="css/images/weichat_8bae732.png" width="100px">
+                <p class="code-info">更多PTE热门资讯</p>
+            </div>
+            <div class="col-md-2 footer-code">
+                <p class="code-name">PTE小程序</p>
+                <img src="css/images/offical_weichat_1a0871c.png" width="100px">
+                <p class="code-info">扫TA随时开始学习</p>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        .container-intro{
+            color: #fff !important;
+        }
+    </style>
+</footer>
+
+<script src="js/hm.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/auto_combine_4e05c_c58e00e.js"></script>
+<script>
+
+    //初始化数据对象
+    AV.initialize('trvagkk7ax80wukbpmvs3knf03ssad6bjih9gfqtyt0keyjj', '4ub3a2qywvlqi7ax9ntsci5ooxfzbmcfe75yi3j2r6851ymr');
+    //创建用户对象
+    var user = new AV.User();
+
+   var _hmt = _hmt || [];
+   (function() {
+       var hm = document.createElement("script");
+       hm.src = "js/hm.js";
+       var s = document.getElementsByTagName("script")[0];
+       s.parentNode.insertBefore(hm, s);
+   })();
+</script>
+<script type="text/javascript">
+//bdp自研统计产品
+// (function(para) {
+//     var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null, z = 1 * new Date();
+//     w['__BDP_DATA_ANALYTIC__'] = n;
+//     w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+//     var ifs = ['track', 'quick', 'register', 'registerPage', 'registerOnce'];
+//     for (var i = 0; i < ifs.length; i++) {
+//       w[n][ifs[i]] = w[n].call(null, ifs[i]);
+//     }
+//     if (!w[n]._t) {
+//         x = d.createElement(s), y = d.getElementsByTagName('head')[0];
+//         x.async = 0;
+//         x.src = p + '?_t=' + z;
+//         y.appendChild(x);
+//         w[n]._t = 1 * new Date();
+//         w[n].para = para;
+//     }
+// })({
+//     sdk_url: 'js/bdpa-sdk-js.js',
+//     name: 'bdpa',
+//     token: 'anh5OWt2cgB4cmgBfXBRWxIMMwUUDC1danAVXGh3XF14A2sBbmFRbxELICIFDXUNigAAAA==',
+//     debug_mode: false
+// });
+</script>
+
+
+
+
+</body></html>

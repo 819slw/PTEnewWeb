@@ -1,0 +1,325 @@
+<html ng-app="video"><head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="description" content="BDP操作教程视频，让你轻松上手BDP，玩转数据可视化分析工具，从此你就是数据达人。">
+    <meta name="keywords" content="一站式数据分析平台、数据分析工具、数据可视化工具">
+    <title>BDP个人版-使用教程、教学视频</title>
+    <link type="text/css" rel="stylesheet" href="css/auto_combine_90e1c_fadc247.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <!-- <script src="//sdk.bdp.cn/bdpa-sdk-js.js?_t=1528368127912"></script> -->
+</head>
+
+<body class="instructional-video" style="">
+
+
+<div class="warn-box">
+    <div class="warn-word">正在开发中敬请期待！</div>
+</div>
+
+<nav class="navbar clearfix J-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <i class="ico-list navbar-toggle collapsed"></i>   
+            <!-- <button type="button" class="">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <!-- <a href="navbar-logo" style="font-size: 35px; font-weight: bold;padding-right: 20px;">pte.ai</a> -->
+            <a class="navbar-logo" href="/home.html">
+            </a>
+        </div>
+        <div class="navbar-collapse nav-hide" id="J-navbar-collapse">
+            <i class="ico-close navbar-toggle close-toggle"></i>
+            <!-- <button type="button" class="">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <ul class="navbar-nav nav-list navbar-left">
+                <li class="nav-list-item" id="home_page"><a href="home.html">首页</a></li>
+                <li class="nav-list-item" id="case_page"><a href=" case-operate.html">课程&会员</a></li>
+                <li class="nav-list-item" id="member_info"><a href="member.html">用户案例</a></li>
+                <li class="nav-list-item" id="instructional_video"><a href="instructional_video.html">教学视频</a></li>
+                <li class="nav-list-item" id="about_page"><a href="portal.html" target="_blank">用户社区</a></li>
+            </ul>
+            <ul class="navbar-nav nav-button-group navbar-right">
+                <li class="nav-list-item">
+                    <button class="download-btn btn-animation follow-Public-number"><span>关注公众号</span></button>
+                </li>
+                <li class="nav-list-item">
+                    <button class="download-btn btn-animation follow-Small-program"><span>关注小程序</span></button>
+                </li>
+                <li class="nav-list-item J-register-btn">
+                    <a>
+                        <button class="signin-btn btn-animation btn-an-adverse login-btn"><span>注册</span></button>
+                    </a>
+                </li>
+                <li class="nav-list-item J-login-btn">
+                    <a>
+                        <button class="signin-btn btn-animation btn-an-adverse  login-btn"><span>登录</span></button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 扫描二维码 -->
+<div class="erweima-download-modal-wrapper erweima-J-down-load-app" style="display: none;">
+    <div class="erweima-download-modal-bg"></div>
+    <div class="erweima-download-modal">
+        <div class="download-modal-header">
+            <div class="erweima-modal-close"></div>
+        </div>
+        <div class="download-modal-body">
+            <div class="download-title">扫描二维码 下载APP</div>
+            <div class="download-sub-title"></div>
+            <img class="download-code" src="css/images/download_app_code.png">
+        </div>
+    </div>
+</div>
+
+   <!-- //登陆弹出框 -->
+<div class="login-download-modal-wrapper login-J-down-load-app" id="login_box">
+    <div class="login-download-modal-bg"></div>
+    <div class="login-download-modal login-grid">
+      <img class="grid-top-pic" src="css/images/loginBoxTop.png" style="max-width: 100%">
+      <div class="top-word">
+        <p class="brand-intro-font">PTE黑科技在线学习平台</p>
+        <p class="brand-edition-font">Ver0.5.0版本</p>
+      </div>
+      <div class="login-content">
+        <img class="erweima" src="css/images/load.gif" />
+        <p class="login-font-style">请使用微信扫描二维码登录</p>
+        <p class="login-font-style">“PTE黑科技”</p>
+        <div class="new-modular">
+          <p class="login-font-style">【功能】新增了模考功能，同学们可以在其中练习分类模考啦！</p>
+          <p class="login-font-style">【功能】新增了我的模考功能，同学们可以在里面查看之前的模考情况啦！</p>
+          <p class="login-font-style">【功能】新增了数据中心，同学们可以查看我的个人数据啦！</p>
+          <p class="login-font-style">【修复】修复了已知的再练习里面的bug！</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="personal-help">
+    <div class="btn-help"><i class="bdp-icon ico-help-white"></i></div>
+    <div class="tooltip-help">
+        帮助与反馈
+    </div>
+    <div class="pannel-question" style="display: none;">
+        <div class="pannel-header">
+            <ul class="header-list clearfix">
+                 <li class="header-item active">
+                     常见问题
+                 </li>
+             </ul>
+        </div>
+        <div class="pannel-body">
+            <ul class="question-list">
+                <li class="question-item" data-log="register">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        如何快速注册？
+                    </div>
+                    <div class="answer">
+                        在线通过手机号或邮箱注册即可，无需安装下载，注册后就能永久免费使用。
+                    </div>
+                </li>
+                <li class="question-item" data-log="getStart">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        如何快速上手BDP个人版？
+                    </div>
+                    <div class="answer">
+                        在BDP，三步即可搞定数据分析：对接数据-拖拽分析-可视化呈现，就两个字：拖拽。若想实现入门到精通，用户社区、微信公众号和用户群能帮你。
+                    </div>
+                </li>
+                <li class="question-item" data-log="levelDifference">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        不同会员级别有什么区别？
+                    </div>
+                    <div class="answer">
+                        <p>1）免费：100G容量、对接3个API。</p>
+                        <p>2）银钻：1G容量、对接8个API，并享受本地同步宝、数据库直连、公众号对接、地址转经纬度等高级功能。</p>
+                        <p>3）金钻：10G容量、对接50个API，包括所有银钻功能，并享受同步客户端、数据库实时更新、私密分享等更多高级功能。</p>
+                    </div>
+                </li>
+                <li class="question-item" data-log="enterpriseDifference">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        个人版和企业版有什么区别？
+                    </div>
+                    <div class="answer">
+                        企业版数据容量限制大于个人版，且企业版提供完整的账号权限管理体系、完善的数据分配体系、更加强大的大数据计算性能、行业数据解决方案咨询......<a class="bdp-a" href="https://bbs.bdp.cn/forum.php?mod=viewthread&amp;tid=71&amp;highlight=%E5%8C%BA%E5%88%AB" target="_blank">了解更多</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="question-item" data-log="goBbs">
+                    <a href="https://bbs.bdp.cn/portal.php" target="_blank" class="quertion">
+                        <i class="bdp-icon ico-help-other"></i>
+                        <span class="vm">还有其他问题？欢迎去<span class="cr-link font-w-b">用户社区</span>学习</span>
+                        <i class="bdp-icon ico-turn-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+
+    
+
+    <section class="banner video-banner J-scorll-top">
+        <h5 class="banner-title">精通使用黑科技PTE</h5>
+        <p class="banner-slogan">快速学会使用黑科技PTE，你就是学习达人</p>
+    </section>
+    <section class="video-wrap container">
+        <div class="video-pannel">
+            <div class="pannel-header">
+                <ul class="category-list J-category-list">
+                    <!-- <li class="category-item Developmenting">
+                        1adfasdf
+                    </li>
+                    <li class="category-item Developmenting">
+                        热门视频
+                    </li> -->
+                <li class="category-item active" data-type="popular">             热门视频         </li><li class="category-item Developmenting" data-type="datasource">             练习使用         </li><li class="category-item Developmenting" data-type="worksheet">             模考使用         </li><li class="category-item Developmenting" data-type="dashboard">             可视化分析         </li><li class="category-item Developmenting" data-type="chart">             学习计划         </li><li class="category-item Developmenting" data-type="sceneTutorial">             特定场景         </li></ul>
+            </div>
+            <div class="pannel-body">
+                <ul class="video-list clearfix J-video-list"><li class="video-item Developmenting">             <div id="video_00" class="video video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 300px; height: 150px;"><video class="vjs-tech" id="video_00_html5_api">                 <source src="https://video.bdp.cn/pmresources/assets/hot/data_analysis_170630.mp4" type="video/mp4">             </video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 5.47522%;"><span class="vjs-control-text" style="left: 0%; width: 100%;"><span>Loaded</span>: 0%</span></div><div class="vjs-play-progress"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control vjs-hidden" aria-haspopup="true" role="button"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span></div><div class="vjs-playback-rate-value">1</div><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div></div><div class="vjs-error-display"><div></div></div></div>             <div class="video-mask">                 <p class="video-title">
+                <!-- 三步搞定数据分析 -->
+            </p>                 <p class="video-slogan"><!-- BDP教你三步轻松搞定数据分析 --></p>                 <div class="video-duration">3:13</div>             </div>             <div class="video-mask-hover">                 <i class="ico-video"></i>             </div>         </li><li class="video-item Developmenting">             <div id="video_01" class="video video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 300px; height: 150px;"><video class="vjs-tech" id="video_01_html5_api">                 <source src="http://bdp-resources.oss-cn-beijing.aliyuncs.com/pmresources/assets/dashEdit/%E7%94%B3%E8%AF%B7%E5%8F%91%E7%A5%A8.mp4" type="video/mp4">             </video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text" style="left: 0%; width: 16.0744%;"><span>Loaded</span>: 0%</span><div style="left: 98.9254%; width: 1.07458%;"></div></div><div class="vjs-play-progress"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control vjs-hidden" aria-haspopup="true" role="button"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span></div><div class="vjs-playback-rate-value">1</div><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div></div><div class="vjs-error-display"><div></div></div></div>             <div class="video-mask">                 <p class="video-title"><!-- 申请发票 --></p>                 <p class="video-slogan"><!-- 如何申请发票 --></p>                 <div class="video-duration">0:52</div>             </div>             <div class="video-mask-hover">                 <i class="ico-video"></i>             </div>         </li><li class="video-item Developmenting">             <div id="video_02" class="video video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 300px; height: 150px;"><video class="vjs-tech" id="video_02_html5_api">                 <source src="http://bdp-resources.oss-cn-beijing.aliyuncs.com/pmresources/assets/sceneTutorial/%E6%9B%B4%E6%94%B9%E4%B8%BB%E9%A2%98%E8%83%8C%E6%99%AF%E8%89%B2.mp4" type="video/mp4">             </video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text" style="left: 0%; width: 18.7601%;"><span>Loaded</span>: 0%</span><div style="left: 98.4921%; width: 1.5079%;"></div></div><div class="vjs-play-progress"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control vjs-hidden" aria-haspopup="true" role="button"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span></div><div class="vjs-playback-rate-value">1</div><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div></div><div class="vjs-error-display"><div></div></div></div>             <div class="video-mask">                 <p class="video-title"><!-- 更改主题背景 --></p>                 <p class="video-slogan"><!-- 如何更改主题背景色 --></p>                 <div class="video-duration">0:32</div>             </div>             <div class="video-mask-hover">                 <i class="ico-video"></i>             </div>         </li><li class="video-item Developmenting">             <div id="video_03" class="video video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 300px; height: 150px;"><video class="vjs-tech" id="video_03_html5_api">                 <source src="https://video.bdp.cn/pmresources/assets/dashEdit/biaxialDiagram_170313.mp4" type="video/mp4">             </video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 2.76538%;"><span class="vjs-control-text" style="left: 0%; width: 100%;"><span>Loaded</span>: 0%</span></div><div class="vjs-play-progress"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control vjs-hidden" aria-haspopup="true" role="button"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span></div><div class="vjs-playback-rate-value">1</div><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div></div><div class="vjs-error-display"><div></div></div></div>             <div class="video-mask">                 <p class="video-title"><!-- 制作双轴图 --></p>                 <p class="video-slogan"><!-- 如何制作双轴图（折线图+柱状图） --></p>                 <div class="video-duration">1:18</div>             </div>             <div class="video-mask-hover">                 <i class="ico-video"></i>             </div>         </li><li class="video-item Developmenting">             <div id="video_04" class="video video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 300px; height: 150px;"><video class="vjs-tech" id="video_04_html5_api">                 <source src="https://video.bdp.cn/pmresources/assets/dashEdit/creatC300.mp4" type="video/mp4">             </video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 2.56013%;"><span class="vjs-control-text" style="left: 0%; width: 100%;"><span>Loaded</span>: 0%</span></div><div class="vjs-play-progress"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control vjs-hidden" aria-haspopup="true" role="button"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span></div><div class="vjs-playback-rate-value">1</div><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div></div><div class="vjs-error-display"><div></div></div></div>             <div class="video-mask">                 <p class="video-title"><!-- 桑基图 --></p>                 <p class="video-slogan"><!-- 如何制作桑基图 --></p>                 <div class="video-duration">2:50</div>             </div>             <div class="video-mask-hover">                 <i class="ico-video"></i>             </div>         </li><li class="video-item Developmenting">             <div id="video_05" class="video video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 300px; height: 150px;"><video class="vjs-tech" id="video_05_html5_api">                 <source src="http://bdp-resources.oss-cn-beijing.aliyuncs.com/pmresources/assets/dashboard/%E6%B0%94%E6%B3%A1%E5%9B%BE%E5%88%86%E6%9E%90.mp4" type="video/mp4">             </video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 4.22569%;"><span class="vjs-control-text" style="left: 0%; width: 100%;"><span>Loaded</span>: 0%</span></div><div class="vjs-play-progress"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control vjs-hidden" aria-haspopup="true" role="button"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span></div><div class="vjs-playback-rate-value">1</div><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div></div><div class="vjs-error-display"><div></div></div></div>             <div class="video-mask">                 <p class="video-title"><!-- 气泡图 --></p>                 <p class="video-slogan"><!-- 如何制作气泡图 --></p>                 <div class="video-duration">2:13</div>             </div>             <div class="video-mask-hover">                 <i class="ico-video"></i>             </div>         </li><li class="video-item Developmenting">             <div id="video_06" class="video video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 300px; height: 150px;"><video class="vjs-tech" id="video_06_html5_api">                 <source src="http://bdp-resources.oss-cn-beijing.aliyuncs.com/pmresources/assets/dashboard/%E8%AF%8D%E4%BA%91%E5%88%86%E6%9E%90.mp4" type="video/mp4">             </video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text" style="left: 0%; width: 4.09248%;"><span>Loaded</span>: 0%</span><div style="left: 98.9977%; width: 1.00233%;"></div></div><div class="vjs-play-progress"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control vjs-hidden" aria-haspopup="true" role="button"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span></div><div class="vjs-playback-rate-value">1</div><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div></div><div class="vjs-error-display"><div></div></div></div>             <div class="video-mask">                 <p class="video-title"><!-- 词云图 --></p>                 <p class="video-slogan"><!-- 如何制作词云图 --></p>                 <div class="video-duration">1:54</div>             </div>             <div class="video-mask-hover">                 <i class="ico-video"></i>             </div>         </li><li class="video-item Developmenting">             <div id="video_07" class="video video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 300px; height: 150px;"><video class="vjs-tech" id="video_07_html5_api">                 <source src="http://bdp-resources.oss-cn-beijing.aliyuncs.com/pmresources/assets/dashboard/%E7%83%AD%E5%8A%9B%E5%9B%BE%E5%88%86%E6%9E%90.mp4" type="video/mp4">             </video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 5.7372%;"><span class="vjs-control-text" style="left: 0%; width: 100%;"><span>Loaded</span>: 0%</span></div><div class="vjs-play-progress"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control vjs-hidden" aria-haspopup="true" role="button"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span></div><div class="vjs-playback-rate-value">1</div><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div></div><div class="vjs-error-display"><div></div></div></div>             <div class="video-mask">                 <p class="video-title"><!-- 热力地图 --></p>                 <p class="video-slogan"><!-- 如何制作热力地图 --></p>                 <div class="video-duration">1:57</div>             </div>             <div class="video-mask-hover">                 <i class="ico-video"></i>             </div>         </li><li class="video-item Developmenting">             <div id="video_08" class="video video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-user-inactive" style="width: 300px; height: 150px;"><video class="vjs-tech" id="video_08_html5_api">                 <source src="https://video.bdp.cn/pmresources/assets/dashEdit/display_number_170406.mp4" type="video/mp4">             </video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 6.2444%;"><span class="vjs-control-text" style="left: 0%; width: 100%;"><span>Loaded</span>: 0%</span></div><div class="vjs-play-progress"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control vjs-hidden" aria-haspopup="true" role="button"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span></div><div class="vjs-playback-rate-value">1</div><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div></div><div class="vjs-error-display"><div></div></div></div>             <div class="video-mask">                 <p class="video-title"><!-- 图表数值显示 --></p>                 <p class="video-slogan"><!-- 如何在数据图表上显示具体的数值 --></p>                 <div class="video-duration">0:36</div>             </div>             <div class="video-mask-hover">                 <i class="ico-video"></i>             </div>         </li></ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <p>若上述视频还没解决你的问题，快来告诉我们！<a class="contact-btn J-contact-btn">联系我们</a></p>
+    </section>
+
+    <div class="download-modal-wrapper J-contact-dialog" style="display: none;">
+        <div class="download-modal-bg"></div>
+        <div class="download-modal">
+            <div class="download-modal-header">
+                <div class="modal-close"></div>
+            </div>
+            <div class="download-modal-body">
+                <div class="download-title">联系我们</div>
+                <p class="download-slogan">问题还没解决？快扫一扫告诉我，说不定你的问题会变成视频哦</p>
+                <img class="download-code" src="css/images/offical_weichat_1a0871c.png">
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <!-- <div class="row">
+            <img src="/static/css/images/new_home/footer_logo.png" class="logo footer-logo">
+        </div> -->
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="footer-nav-container">
+                    <li><a href="home.html" class="container-intro">首页</a><i class="disc"></i></li>
+                    <li><a href="case-operate.html" class="container-intro">课程&会员</a><i class="disc"></i></li>
+                    <li><a href="member.html" class="container-intro">用户案例</a><i class="disc"></i></li>
+                    <li id="product_page"><a href="instructional_video.html" class="container-intro">教学视频</a><i class="disc"></i></li>
+                    <li><a href="portal.html" target="_blank" class="container-intro">用户社区</a><i class="disc"></i></li>
+                    <li id="showPCall">联系我们</li>
+                </ul>
+                <ul class="contact-container footer-mesg">
+                    <li><i class="ico ico-address"></i>西安市雁塔区雁翔路博源科技广场C座</li>
+                    <li><i class="ico ico-zhihu"></i>黑科技PTE</li>
+                    <li><i class="ico ico-phone"></i>400-101-9155</li>
+                    <li><a id="email_contact" href="mailto:xiaop@bdp.cn"><i class="ico ico-email"></i>info@ikk.ai</a></li>
+                    <!-- <li><i class="ico ico-qq"></i>2543360559</li> -->
+                </ul>
+                <p class="copyright">Copyright 2017 - 2018  ikk. All Rights Reserved.<span>深圳市科科智能科有限公司 版权所有</span></p>
+            </div>
+            
+            <div class="col-md-2 footer-code">
+                <p class="code-name">PTE微信公众号</p>
+                <img src="css/images/weichat_8bae732.png" width="100px">
+                <p class="code-info">更多PTE热门资讯</p>
+            </div>
+            <div class="col-md-2 footer-code">
+                <p class="code-name">PTE小程序</p>
+                <img src="css/images/offical_weichat_1a0871c.png" width="100px">
+                <p class="code-info">扫TA随时开始学习</p>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        .container-intro{
+            color: #fff !important;
+        }
+    </style>
+</footer>
+
+    <script src="js/hm.js"></script><script type="text/x-jquery-tmpl" id="videoTemplate">
+        <li class="video-item">
+            <video class="video video-js vjs-default-skin" controls>
+                <source src="${src}" type='video/mp4' />
+            </video>
+            <div class="video-mask">
+                <p class="video-title">${title}</p>
+                <p class="video-slogan">${slogan}</p>
+                <div class="video-duration"></div>
+            </div>
+            <div class="video-mask-hover">
+                <i class="ico-video"></i>
+            </div>
+        </li>
+    </script>
+
+    <script type="text/x-jquery-tmpl" id="categoryTemplate">
+        <li class="category-item" data-type="${id}">
+            ${name}
+        </li>
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="js/auto_combine_51edc_04d3f41.js"></script>
+<script>
+   var _hmt = _hmt || [];
+   (function() {
+       var hm = document.createElement("script");
+       hm.src = "js/hm.js";
+       var s = document.getElementsByTagName("script")[0];
+       s.parentNode.insertBefore(hm, s);
+   })();
+</script>
+<script type="text/javascript">
+//bdp自研统计产品
+// (function(para) {
+//     var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null, z = 1 * new Date();
+//     w['__BDP_DATA_ANALYTIC__'] = n;
+//     w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+//     var ifs = ['track', 'quick', 'register', 'registerPage', 'registerOnce'];
+//     for (var i = 0; i < ifs.length; i++) {
+//       w[n][ifs[i]] = w[n].call(null, ifs[i]);
+//     }
+//     if (!w[n]._t) {
+//         x = d.createElement(s), y = d.getElementsByTagName('head')[0];
+//         x.async = 0;
+//         x.src = p + '?_t=' + z;
+//         y.appendChild(x);
+//         w[n]._t = 1 * new Date();
+//         w[n].para = para;
+//     }
+// })({
+//     sdk_url: '//sdk.bdp.cn/bdpa-sdk-js.js',
+//     name: 'bdpa',
+//     token: 'anh5OWt2cgB4cmgBfXBRWxIMMwUUDC1danAVXGh3XF14A2sBbmFRbxELICIFDXUNigAAAA==',
+//     debug_mode: false
+// });
+</script>
+
+    
+
+
+</body></html>

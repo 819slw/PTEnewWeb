@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+#SJ_banner{font:12px tahoma,'\5b8b\4f53',sans-serif;font-family:"Microsoft Yahei";font-size:12px; background:#f6f6f6; min-width:1200px;}
+#SJ_banner *{margin:0px; padding:0px;}
+#SJ_banner ul li{list-style:none;}
+#SJ_banner li{list-style:none;}
+#SJ_banner img{border:none;}
+#SJ_banner a{color:#333; text-decoration:none; cursor:pointer;}
+#SJ_banner.clearfix{zoom:1;}
+#SJ_banner.clearfix:after{clear:both; height:0px; font-size:0px; visibility:hidden;display:block;content:" ";}
+#SJ_banner .hidden{display: none;}
+
+#SJ_banner{height:300px;position:relative;z-index:1;overflow:hidden;}
+#SJ_banner .mask{height:300px;width:1200px;position:absolute;top:0;z-index:3;cursor:pointer;opacity:0.6;filter:alpha(opacity= 60 )}
+#SJ_banner .mask.mask_l{right:50%;margin-right:600px;background:#000 url(./images/prev_bnt.png) no-repeat 102% center}
+#SJ_banner .mask.mask_r{left:50%;margin-left:600px;background:#000 url(./images/next_bnt.png) no-repeat -2% center}
+#SJ_banner .mask:hover{opacity:0.4;filter:alpha(opacity= 40 )}
+#SJ_banner .b_wrap{width:1200px;position:absolute;left:50%;margin-left:-600px;height:300px;top:0;z-index:1;overflow:visible}
+#SJ_banner .b_wrap ul{position:absolute;width:20000px;z-index:2;height:300px}
+#SJ_banner .b_wrap ul li{width:1200px;float:left;display:inline;height:300px;background-position:center center;position:relative;opacity:1;filter:alpha(opacity= 100 )}
+#SJ_banner .b_wrap ul li:hover{opacity:1;filter:alpha(opacity= 100 )}
+#SJ_banner .b_wrap ul li:hover p{display:block}
+#SJ_banner .b_wrap ul li a{display:block;width:100%;height:100%}
+#SJ_banner .b_wrap ul li p{background:#000;opacity:.8;filter:alpha(opacity= 80 );position:absolute;bottom:0;width:100%;line-height:40px;font-size:16px;color:#fff;text-align:center;display:none}
+#SJ_banner li img{margin:0 auto;width:100%;height:100%}
+@media screen and (max-width:1260px){
+	#SJ_banner{height:278px;}
+	#SJ_banner .mask{width:980px; height:278px;}
+	#SJ_banner .mask.mask_l{margin-right:490px}
+	#SJ_banner .mask.mask_r{margin-left:490px}
+	#SJ_banner .b_wrap{width:980px; height:278px;margin-left:-490px}
+	#SJ_banner .b_wrap ul li{width:980px; height:278px;}
+}

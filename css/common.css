@@ -1,0 +1,179 @@
+#showPCall{
+	cursor: pointer;
+	color: #fff;
+}
+.erweima-download-modal-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10100;
+}
+.erweima-download-modal-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    z-index: -1;
+}
+.erweima-download-modal{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    position: absolute;
+    width: 500px;
+    max-width: 90%;
+    height: 360px;
+    font-size: 18px;
+    background: rgba(255,255,255,.96);
+    text-align: center;
+}
+    #login_box{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10100;
+    }
+    #login_box .login-download-modal-bg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.3);
+        z-index: -1;
+    }
+    #login_box .login-download-modal{
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        position: absolute;
+        width: 500px;
+        max-width: 90%;
+        height: 600px;
+        font-size: 18px;
+        background: rgba(255,255,255,.96);
+        text-align: center;
+    }
+    
+@media screen and (max-width: 400px) {
+    .login-content{
+    	padding-top: 65px !important;
+    }
+    .login-content .erweima{
+    	width: 150px !important;
+    	height: 150px !important;
+    }
+    .top-word{
+    	color: #2E68DC !important;
+    	height: 100px !important;
+    	padding: 0 !important;
+    	top: -50px !important;
+    	justify-content: center !important;
+    	align-items: center !important;
+    }
+    #login_box .login-download-modal{
+    	height: 440px;
+    }
+}
+  .dialog{
+    overflow-y: inherit !important;
+  }
+  .login-font-style{
+    font-size: 14px;
+    color: #818f9e;
+    margin-top: 10px;
+    margin-bottom:0; 
+  }
+  .top-word{
+    width: 100%;
+    height:200px; 
+    padding: 30px 0 0 50px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 9999;
+    color: #fff;
+  }
+  .top-word .brand-intro-font{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+  .top-word .brand-edition-font{
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+  .login-content{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .login-content .new-modular{
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .login-content .erweima{
+    width: 240px;
+    height: 240px;
+  }
+  .login-grid{
+    width: 100%;
+    position: relative;
+  }
+  .grid-top-pic{
+      display: block;
+      position: absolute;
+      top: -80px;
+      z-index: 9999;
+  }
+
+
+ /* 提示框 */
+.warn-box{
+	width: 250px;
+	height: 50px;
+	color: #fff;
+	position: fixed;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: -1;
+	background: #000;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	border-radius: 4px;
+	letter-spacing: 2px;
+	opacity: 0;
+}
+.Developmenting{
+	cursor: pointer;
+}
+.login-btn{
+	cursor: pointer;
+}

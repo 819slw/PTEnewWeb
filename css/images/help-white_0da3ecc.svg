@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Frame</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-4640 -1737)">
+<g id="Frame">
+<g id="Union">
+<use xlink:href="#path0_fill" transform="translate(4643 1738)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 2 4.69409C 2 3.27966 3.2666 2 5 2C 6.7334 2 8 3.27966 8 4.69409C 8 6.10852 6.7334 7.38818 5 7.38818L 4 7.38818L 4 8.38818L 4 11L 6 11L 6 9.29309C 8.23486 8.86328 10 7.02185 10 4.69409C 10 2.0282 7.68506 0 5 0C 2.31494 0 0 2.0282 0 4.69409L 2 4.69409ZM 4 12L 4 14L 6 14L 6 12L 4 12Z"/>
+</defs>
+</svg>

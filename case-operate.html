@@ -1,0 +1,788 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="application-name" content="海致BDP">
+    <meta name="description" content="快速整合互联网运营工作中不同平台的数据，拖拽以可视化图表直观展示网站渠道、用户、内容、产品功能、活动、新媒体等关键指标，数据实时更新，让数据分析真正驱动运营增长。">
+    <meta name="keywords" content="用户故事，用户评价，运营场景，BDP口碑">
+    <title>运营数据分析-BDP用户场景案例</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="baidu-site-verification" content="9EYe6NEPfu">
+    <!--[if lt IE 10]>
+    <script>
+        (function(){
+            var tags = "abbr,article,aside,audio,canvas,datalist,details,dialog,section,"
+                    + "eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,"
+                    + "output,progress,time,video";
+            tags = tags.split(",");
+            var i = tags.length;
+            while(i--){
+                document.createElement(tags[i]);
+            }
+        })();
+    </script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/auto_combine_73112_320ecc7.css">
+    <link type="text/css" rel="stylesheet" href="css/auto_combine_e9548_3e22ea4.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+<!-- <script src="//sdk.bdp.cn/bdpa-sdk-js.js?_t=1528357015365"></script> -->
+</head>
+
+<body class="case-body" style="">
+    
+
+<div class="warn-box">
+    <div class="warn-word">正在开发中敬请期待！</div>
+</div>
+
+
+<nav class="navbar clearfix J-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <i class="ico-list navbar-toggle collapsed"></i>   
+            <!-- <button type="button" class="">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <!-- <a href="navbar-logo" style="font-size: 35px; font-weight: bold;padding-right: 20px;">pte.ai</a> -->
+            <a class="navbar-logo" href="/home.html">
+            </a>
+        </div>
+        <div class="navbar-collapse nav-hide" id="J-navbar-collapse">
+            <i class="ico-close navbar-toggle close-toggle"></i>
+            <!-- <button type="button" class="">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> -->
+            <ul class="navbar-nav nav-list navbar-left">
+                <li class="nav-list-item" id="home_page"><a href="home.html">首页</a></li>
+                <li class="nav-list-item" id="case_page"><a href=" case-operate.html">课程&会员</a></li>
+                <li class="nav-list-item" id="member_info"><a href="member.html">用户案例</a></li>
+                <li class="nav-list-item" id="instructional_video"><a href="instructional_video.html">教学视频</a></li>
+                <li class="nav-list-item" id="about_page"><a href="portal.html" target="_blank">用户社区</a></li>
+            </ul>
+            <ul class="navbar-nav nav-button-group navbar-right">
+                <li class="nav-list-item">
+                    <button class="download-btn btn-animation follow-Public-number"><span>关注公众号</span></button>
+                </li>
+                <li class="nav-list-item">
+                    <button class="download-btn btn-animation follow-Small-program"><span>关注小程序</span></button>
+                </li>
+                <li class="nav-list-item J-register-btn">
+                    <a>
+                        <button class="signin-btn btn-animation btn-an-adverse login-btn"><span>注册</span></button>
+                    </a>
+                </li>
+                <li class="nav-list-item J-login-btn">
+                    <a>
+                        <button class="signin-btn btn-animation btn-an-adverse  login-btn"><span>登录</span></button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 扫描二维码 -->
+<div class="erweima-download-modal-wrapper erweima-J-down-load-app" style="display: none;">
+    <div class="erweima-download-modal-bg"></div>
+    <div class="erweima-download-modal">
+        <div class="download-modal-header">
+            <div class="erweima-modal-close"></div>
+        </div>
+        <div class="download-modal-body">
+            <div class="download-title">扫描二维码 下载APP</div>
+            <div class="download-sub-title"></div>
+            <img class="download-code" src="css/images/download_app_code.png">
+        </div>
+    </div>
+</div>
+
+   <!-- //登陆弹出框 -->
+<div class="login-download-modal-wrapper login-J-down-load-app" id="login_box">
+    <div class="login-download-modal-bg"></div>
+    <div class="login-download-modal login-grid">
+      <img class="grid-top-pic" src="css/images/loginBoxTop.png" style="max-width: 100%">
+      <div class="top-word">
+        <p class="brand-intro-font">PTE黑科技在线学习平台</p>
+        <p class="brand-edition-font">Ver0.5.0版本</p>
+      </div>
+      <div class="login-content">
+        <img class="erweima" src="css/images/load.gif" />
+        <p class="login-font-style">请使用微信扫描二维码登录</p>
+        <p class="login-font-style">“PTE黑科技”</p>
+        <div class="new-modular">
+          <p class="login-font-style">【功能】新增了模考功能，同学们可以在其中练习分类模考啦！</p>
+          <p class="login-font-style">【功能】新增了我的模考功能，同学们可以在里面查看之前的模考情况啦！</p>
+          <p class="login-font-style">【功能】新增了数据中心，同学们可以查看我的个人数据啦！</p>
+          <p class="login-font-style">【修复】修复了已知的再练习里面的bug！</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- <div class="personal-help">
+    <div class="btn-help"><i class="bdp-icon ico-help-white"></i></div>
+    <div class="tooltip-help">
+        帮助与反馈
+    </div>
+    <div class="pannel-question" style="display: none;">
+        <div class="pannel-header">
+            <ul class="header-list clearfix">
+                 <li class="header-item active">
+                     常见问题
+                 </li>
+             </ul>
+        </div>
+        <div class="pannel-body">
+            <ul class="question-list">
+                <li class="question-item" data-log="register">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        如何快速注册？
+                    </div>
+                    <div class="answer">
+                        在线通过手机号或邮箱注册即可，无需安装下载，注册后就能永久免费使用。
+                    </div>
+                </li>
+                <li class="question-item" data-log="getStart">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        如何快速上手BDP个人版？
+                    </div>
+                    <div class="answer">
+                        在BDP，三步即可搞定数据分析：对接数据-拖拽分析-可视化呈现，就两个字：拖拽。若想实现入门到精通，用户社区、微信公众号和用户群能帮你。
+                    </div>
+                </li>
+                <li class="question-item" data-log="levelDifference">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        不同会员级别有什么区别？
+                    </div>
+                    <div class="answer">
+                        <p>1）免费：100G容量、对接3个API。</p>
+                        <p>2）银钻：1G容量、对接8个API，并享受本地同步宝、数据库直连、公众号对接、地址转经纬度等高级功能。</p>
+                        <p>3）金钻：10G容量、对接50个API，包括所有银钻功能，并享受同步客户端、数据库实时更新、私密分享等更多高级功能。</p>
+                    </div>
+                </li>
+                <li class="question-item" data-log="enterpriseDifference">
+                    <div class="quertion">
+                        <i class="bdp-icon ico-triangle-right"></i>
+                        个人版和企业版有什么区别？
+                    </div>
+                    <div class="answer">
+                        企业版数据容量限制大于个人版，且企业版提供完整的账号权限管理体系、完善的数据分配体系、更加强大的大数据计算性能、行业数据解决方案咨询......<a class="bdp-a" href="https://bbs.bdp.cn/forum.php?mod=viewthread&amp;tid=71&amp;highlight=%E5%8C%BA%E5%88%AB" target="_blank">了解更多</a>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li class="question-item" data-log="goBbs">
+                    <a href="https://bbs.bdp.cn/portal.php" target="_blank" class="quertion">
+                        <i class="bdp-icon ico-help-other"></i>
+                        <span class="vm">还有其他问题？欢迎去<span class="cr-link font-w-b">用户社区</span>学习</span>
+                        <i class="bdp-icon ico-turn-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+
+    <section class="banner member-banner J-scorll-top">
+        <h5 class="banner-title">关注PTE，更关注学习的你</h5>
+        <p class="banner-slogan">考生的成长是我们的唯一目标，在学习PTE的所有场景之中，我们都会提供不同的帮助，助力考生提高学习效率，授人以鱼不如授人以渔！</p>
+    </section>
+    <section class="case-wrap container">
+        <div class="case-pannel">
+            <div class="pannel-header">
+                <ul class="case-list clearfix">
+                    <li class="case-item active" data-target="J-new-media">
+                        <i class="ico-case ico-media-operate"></i>
+                        <span>课程优选</span>
+                    </li>
+                    <li class="case-item" data-target="J-extension">
+                        <i class="ico-case ico-internet-extension"></i>
+                        <span>会员特权</span>
+                    </li>
+                    <li class="case-item unopen">   
+                        <i class="ico-case ico-web-operate"></i>
+                        <div class="tips-wrap">
+                           <span class="tip">拓展&服务</span>
+                           <span class="unopen-tip">敬请期待</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="pannel-body">
+                <ul class="video-list clearfix J-video-list">
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="J-extension">
+        <section class="member-pannel">
+            <div class="member-content container J-scorll-top">
+                <ul class="member-introduction-list clearfix">
+                    <li class="member-introduction-item show member-free">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <!-- <div class="member-intr-blank member-intr-blank-free"></div> -->
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">免费会员</div>
+                                    <div class="member-intro-target">pte轻度使用者</div>
+                                    <div class="member-intr-price text-center">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">0</span>/月
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    可随时在网站进行PTE考试相关练习
+                                </p>
+                                <div class="member-upgrade-btn-wrap">
+                                    <a class="member-upgrade-btn login-btn">免费使用</a>
+                                </div>
+                            </dt>
+                            
+                            <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">             <i class="bdp-icon ico-ok-bold-free">    </i>         </div>         <div class="member-right-item-one fl">             
+                                <div class="member-right-item-title">支持每天无限练习</div>         </div>     
+                            </dd>          
+                            <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">             
+                                    <i class="bdp-icon ico-ok-bold-free">    </i>         </div>         <div class="member-right-item-one fl">             <div class="member-right-item-title">支持参加免费模考
+                                </div>         </div>     
+                            </dd>          
+                            <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">             
+                                    <i class="bdp-icon ico-ok-bold-free">    </i>         </div>         <div class="member-right-item-one fl">             <div class="member-right-item-title">支持添加生词本</div>         </div> 
+                            </dd>          
+                            <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">             
+                                    <i class="bdp-icon ico-ok-bold-free">    </i>         </div>         <div class="member-right-item-one fl">             <div class="member-right-item-title">支持免费加入收藏夹</div>         
+                                </div>     
+                            </dd>
+                            <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">             <i class="bdp-icon ico-ok-bold-free">    </i>         </div>         <div class="member-right-item-one fl">             
+                                <div class="member-right-item-title">支持改变播放速率</div>         </div>     
+                            </dd>          
+                            <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">             
+                                    <i class="bdp-icon ico-ok-bold-free">    </i>         </div>         <div class="member-right-item-one fl">             <div class="member-right-item-title">支持观看课程直播
+                                </div>         </div>     
+                            </dd>          
+                            <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">             
+                                    <i class="bdp-icon ico-ok-bold-free">    </i>         </div>         <div class="member-right-item-one fl">             <div class="member-right-item-title">支持进行智能打分</div>         </div> 
+                            </dd>          
+                            <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">             
+                                    <i class="bdp-icon ico-ok-bold-free">    </i>         </div>         <div class="member-right-item-one fl">             <div class="member-right-item-title">享受添加好友无上限</div>         
+                                </div>     
+                            </dd>
+                            <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">             
+                                    <i class="bdp-icon ico-ok-bold-free">    </i>         </div>         <div class="member-right-item-one fl">             <div class="member-right-item-title">享受每月不限量发送私信</div>         
+                                </div>     
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="member-introduction-item show member-silver">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">黄金会员</div>
+                                    <div class="member-intro-target">
+                                        pte兴趣爱好者
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">99</span>/月
+                                        <div class="member-intr-price-origin">¥199</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    如果你考过PTE，并且分数在65-79左右，建议选择可以助你9炸的黄金会员
+                                </p>
+                                <div class="member-upgrade-btn-wrap"><!--  ng-if="memberData.vipLevel <= 1 && memberData.vipLevel != -1" -->
+                                    <a class="member-upgrade-btn" href="https://shop507556425.taobao.com/" target="_blank">立即加入</a>
+                                </div>
+                            </dt>
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持每天无限练习</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持参加免费模考</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持添加生词本</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持免费加入收藏夹</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持改变播放速率</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持观看课程直播</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持进行智能打分</div>         </div>     
+                        </dd>          
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受添加好友无上限</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每月不限量发送私信</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受黄金尊贵头像认证</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受会员专属模考</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持量身制定学习计划</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每月对个人能力进行分析一次</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每个月赠送50积分</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每月一键导出PDF一次</div>         </div>     
+                        </dd>  
+                    </dl>
+                    </li>
+                    <li class="member-introduction-item show member-gold">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">铂金会员</div>
+                                    <div class="member-intro-target">
+                                        pte重度发烧友
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">199</span>/月
+                                        <div class="member-intr-price-origin">¥299</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    如果没考过PTE，但是英语底子好，生活中也有一直在接触英语，建议选择可以助你快速提升英语能力的铂金会员
+                                </p>
+                                <div class="member-upgrade-btn-wrap"><!--  ng-if="memberData.vipLevel <= 2 && memberData.vipLevel != -1" -->
+                                    <a class="member-upgrade-btn" href="https://shop507556425.taobao.com/" target="_blank">立即加入</a>
+                                </div>
+                            </dt>
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持每天无限练习</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持参加免费模考</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持添加生词本</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持免费加入收藏夹</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持改变播放速率</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持观看课程直播</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持进行智能打分</div>         </div>     
+                        </dd>          
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受添加好友无上限</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每月不限量发送私信</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受黄金尊贵头像认证</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受会员专属模考</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持量身制定学习计划</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受老师一对一点评作业</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每月对个人能力进行分析两次</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每个月赠送100积分</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每月一键导出PDF三次</div>         </div>     
+                        </dd>  
+                    </dl>
+                    </li>
+                    <li class="member-introduction-item show member-company">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">钻石会员</div>
+                                    <div class="member-intro-target">
+                                        pte疯狂痴迷者
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">349</span>/月
+                                        <div class="member-intr-price-origin">¥499</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    如果你已经多年没有学习过英语，现在想重拾英语，建议选择可以早日达到目标的钻石会员
+                                </p>
+                                <div class="member-upgrade-btn-wrap">
+                                    <a class="member-upgrade-btn" href="https://shop507556425.taobao.com/" target="_blank">立即加入</a>
+                                </div>
+                            </dt>
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持每天无限练习</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持参加免费模考</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持添加生词本</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持免费加入收藏夹</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持改变播放速率</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持观看课程直播</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持进行智能打分</div>         </div>     
+                        </dd>          
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受添加好友无上限</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每月不限量发送私信</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受钻石尊贵头像认证</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受会员专属模考</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持量身制定学习计划</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受老师一对一点评作业</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受随时随地对个人能力进行分析</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每个月赠送200积分</div>         </div>     
+                        </dd>  
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">享受每月不限量一键导出PDF</div>         </div>     
+                        </dd> 
+                        <dd class="member-right-item member-right-item-own clearfix">         <div class="member-right-item-icon-wrap fl">      <i class="bdp-icon ico-ok-bold-silver"></i>         </div>         <div class="member-right-item-one fl">             
+                            <div class="member-right-item-title">支持导出个人数据</div>         </div>     
+                        </dd>  
+
+                    </dl>
+                    </li>
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+                <div style="clear: both;"></div>
+        </section>
+    </section>
+    <div class="J-new-media">
+        <!-- add new code    改动：  member-pannel：   margin-top:-118px; -->
+        <section class="member-pannel">
+            <div class="member-content container J-scorll-top">
+                <ul class="member-introduction-list clearfix">
+                    <li class="member-introduction-item show member-silver">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">阅读突破班</div>
+                                    <div class="member-intro-target">
+                                        18课时
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">2499</span>/月
+                                        <div class="member-intr-price-origin">¥2999</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    适用于阅读分数不够的同学，小白和考过很多次的考生同样适用
+                                </p>
+                                <div class="member-upgrade-btn-wrap"><!--  ng-if="memberData.vipLevel <= 1 && memberData.vipLevel != -1" -->
+                                    <a class="member-upgrade-btn Developmenting">立即申请</a>
+                                </div>
+                            </dt>
+                    </dl>
+                    </li>
+                    <li class="member-introduction-item show member-silver">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">一对一课程</div>
+                                    <div class="member-intro-target">
+                                        按课时收费
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">600</span>/月
+                                        <div class="member-intr-price-origin">¥699</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    适用于短期需要参加考试，各个项目差一点儿通过，上课时间比较不固定的同学
+                                </p>
+                                <div class="member-upgrade-btn-wrap"><!--  ng-if="memberData.vipLevel <= 1 && memberData.vipLevel != -1" -->
+                                    <a class="member-upgrade-btn Developmenting">立即申请</a>
+                                </div>
+                            </dt>
+                    </dl>
+                    </li>
+                    <li class="member-introduction-item show member-gold">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">听力突破班</div>
+                                    <div class="member-intro-target">
+                                        16课时
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">2499</span>/月
+                                        <div class="member-intr-price-origin">¥2999</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    适用于听力分数不够的同学，小白和考过很多次的考生都是用
+                                </p>
+                                <div class="member-upgrade-btn-wrap"><!--  ng-if="memberData.vipLevel <= 2 && memberData.vipLevel != -1" -->
+                                    <a class="member-upgrade-btn Developmenting">立即申请</a>
+                                </div>
+                            </dt>
+                    </dl>
+                    </li>
+                    <li class="member-introduction-item show member-silver">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">押题班</div>
+                                    <div class="member-intro-target">
+                                        16课时
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">2499</span>/月
+                                        <div class="member-intr-price-origin">¥2999</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    适用于马上要考试，没有时间看机经，并且对PTE已经有一定了解的同学
+                                </p>
+                                <div class="member-upgrade-btn-wrap"><!--  ng-if="memberData.vipLevel <= 1 && memberData.vipLevel != -1" -->
+                                    <a class="member-upgrade-btn Developmenting">立即申请</a>
+                                </div>
+                            </dt>
+                    </dl>
+                    </li>
+                    <li class="member-introduction-item show member-silver">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">写作突破班</div>
+                                    <div class="member-intro-target">
+                                        18课时
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">2499</span>/月
+                                        <div class="member-intr-price-origin">¥2999</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    适用于写作分数不够的同学，小白和考过很多次的考生都适用
+                                </p>
+                                <div class="member-upgrade-btn-wrap"><!--  ng-if="memberData.vipLevel <= 1 && memberData.vipLevel != -1" -->
+                                    <a class="member-upgrade-btn Developmenting">立即申请</a>
+                                </div>
+                            </dt>
+                    </dl>
+                    </li>
+                    <li class="member-introduction-item show member-silver">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">口语突破班</div>
+                                    <div class="member-intro-target">
+                                        18课时
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">2499</span>/月
+                                        <div class="member-intr-price-origin">¥2999</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    适用于口语分数不够的同学，小白和考过很多次的考生都适用
+                                </p>
+                                <div class="member-upgrade-btn-wrap"><!--  ng-if="memberData.vipLevel <= 1 && memberData.vipLevel != -1" -->
+                                    <a class="member-upgrade-btn Developmenting">立即申请</a>
+                                </div>
+                            </dt>
+                    </dl>
+                    </li>
+                    <li class="member-introduction-item show member-gold">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">全项保过班</div>
+                                    <div class="member-intro-target">
+                                        68课时
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">8999</span>/月
+                                        <div class="member-intr-price-origin">¥10999</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    适用于刚接触PTE,分数要求65分以上的同学
+                                </p>
+                                <div class="member-upgrade-btn-wrap"><!--  ng-if="memberData.vipLevel <= 2 && memberData.vipLevel != -1" -->
+                                    <a class="member-upgrade-btn Developmenting">立即申请</a>
+                                </div>
+                            </dt>
+                    </dl>
+                    </li>
+                    <li class="member-introduction-item show member-gold">
+                        <dl>
+                            <dt class="member-intr-header">
+                                <div class="member-intr-title-wrap">
+                                    <div class="member-intr-title">79分高阶班</div>
+                                    <div class="member-intro-target">
+                                        32课时
+                                    </div>
+                                    <div class="member-intr-price text-right">
+                                        <span class="member-intr-price-symbol">¥</span><span class="member-intr-price-txt">7499</span>/月
+                                        <div class="member-intr-price-origin">¥8999</div>
+                                        <div class="open-item-discount">限时折扣</div>
+                                    </div>
+                                </div>
+                                <p class="member-intro-character">
+                                    训练课4-8人，老师和同学高频互动；<br>
+                                    听说读写高阶技巧，教你写出电脑想要的8分答案；<br>
+                                    课后作业细致批改，训练课精解，带你学透每一道题；<br>
+                                    报课同学需要PTE四项65分的基础。
+                                </p>
+                                <div class="member-upgrade-btn-wrap"><!--  ng-if="memberData.vipLevel <= 2 && memberData.vipLevel != -1" -->
+                                    <a class="member-upgrade-btn Developmenting">立即申请</a>
+                                </div>
+                            </dt>
+                    </dl>
+                    </li>
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+                <div style="clear: both;"></div>
+        </section>
+    </div>
+
+
+<footer>
+    <div class="container">
+        <!-- <div class="row">
+            <img src="/static/css/images/new_home/footer_logo.png" class="logo footer-logo">
+        </div> -->
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="footer-nav-container">
+                    <li><a href="home.html" class="container-intro">首页</a><i class="disc"></i></li>
+                    <li><a href="case-operate.html" class="container-intro">课程&会员</a><i class="disc"></i></li>
+                    <li><a href="member.html" class="container-intro">用户案例</a><i class="disc"></i></li>
+                    <li id="product_page"><a href="instructional_video.html" class="container-intro">教学视频</a><i class="disc"></i></li>
+                    <li><a href="portal.html" target="_blank" class="container-intro">用户社区</a><i class="disc"></i></li>
+                    <li id="showPCall">联系我们</li>
+                </ul>
+                <ul class="contact-container footer-mesg">
+                    <li><i class="ico ico-address"></i>西安市雁塔区雁翔路博源科技广场C座</li>
+                    <li><i class="ico ico-zhihu"></i>黑科技PTE</li>
+                    <li><i class="ico ico-phone"></i>400-101-9155</li>
+                    <li><a id="email_contact" href="mailto:xiaop@bdp.cn"><i class="ico ico-email"></i>info@ikk.ai</a></li>
+                    <!-- <li><i class="ico ico-qq"></i>2543360559</li> -->
+                </ul>
+                <p class="copyright">Copyright 2017 - 2018  ikk. All Rights Reserved.<span>深圳市科科智能科有限公司 版权所有</span></p>
+            </div>
+            
+            <div class="col-md-2 footer-code">
+                <p class="code-name">PTE微信公众号</p>
+                <img src="css/images/weichat_8bae732.png" width="100px">
+                <p class="code-info">更多PTE热门资讯</p>
+            </div>
+            <div class="col-md-2 footer-code">
+                <p class="code-name">PTE小程序</p>
+                <img src="css/images/offical_weichat_1a0871c.png" width="100px">
+                <p class="code-info">扫TA随时开始学习</p>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        .container-intro{
+            color: #fff !important;
+        }
+    </style>
+</footer>
+
+    <script src="js/hm.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/auto_combine_4e05c_c58e00e.js"></script>
+<script>
+   var _hmt = _hmt || [];
+   (function() {
+       var hm = document.createElement("script");
+       hm.src = "js/hm.js";
+       var s = document.getElementsByTagName("script")[0];
+       s.parentNode.insertBefore(hm, s);
+   })();
+</script>
+<script type="text/javascript">
+// //bdp自研统计产品
+// (function(para) {
+//     var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null, z = 1 * new Date();
+//     w['__BDP_DATA_ANALYTIC__'] = n;
+//     w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+//     var ifs = ['track', 'quick', 'register', 'registerPage', 'registerOnce'];
+//     for (var i = 0; i < ifs.length; i++) {
+//       w[n][ifs[i]] = w[n].call(null, ifs[i]);
+//     }
+//     if (!w[n]._t) {
+//         x = d.createElement(s), y = d.getElementsByTagName('head')[0];
+//         x.async = 0;
+//         x.src = p + '?_t=' + z;
+//         y.appendChild(x);
+//         w[n]._t = 1 * new Date();
+//         w[n].para = para;
+//     }
+// })({
+//     sdk_url: '//sdk.bdp.cn/bdpa-sdk-js.js',
+//     name: 'bdpa',
+//     token: 'anh5OWt2cgB4cmgBfXBRWxIMMwUUDC1danAVXGh3XF14A2sBbmFRbxELICIFDXUNigAAAA==',
+//     debug_mode: false
+// });
+</script>
+
+    
+
+</body></html>
